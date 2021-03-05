@@ -46,6 +46,12 @@ function startGame () {
 
 
 function getNewQuestion() {
+        //Checking that there are still available questions (temporary rule for testing functionality)
+    if (availableQuestions.length === 0) {
+
+        //Redirect to end game page if no more questions to ask
+        return window.location.assign("/end-game.html");
+    }
 
         //Randomizes order of questions and display them in game
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -65,6 +71,17 @@ function getNewQuestion() {
     acceptingAnswers = true;
 };
 
+choices.forEach(choice => {
+    choice.addEventListener("click", e => {
+        if(!acceptingAnswers) return;
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        //To compare selected answer number to correct answer number
+        const selectedAnswer = selectedChoice.dataset["number"];
+        getNewQuestion(); 
+
+    });
+});
 
 startGame();
 
