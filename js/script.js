@@ -6,14 +6,14 @@ const correctAnsBonus = 1;
 const maxQuestions = 3; //Keeping at 3 for tesiting functionality, will be changed to 10 later.
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = [];
 
 //----------------------------------------------------------------- Temporary questions for tesiting functionality, will be removed later.
 let questions = [
     {
-      "question": "How many legs does a spider have?",
+      question: "How many legs does a spider have?",
       correct: 2,
       ans1: 6,
       ans2: 8,
@@ -38,6 +38,38 @@ let questions = [
 
 //-------------------------------------------------------------------------------- Start Game
 
+function startGame () {
+    availableQuestions = [...questions];
+    console.log(availableQuestions); //testing functionality, will be removed.
+    getNewQuestion();
+}
+
+
+function getNewQuestion() {
+
+        //Randomizes order of questions and display them in game
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+        //Display all answer choices in game
+    choices.forEach( choice => {
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['ans' + number];
+    });
+        
+        //Removes used question from question pool
+    availableQuestions.splice(questionIndex, 1);
+
+        //Allow user to answer
+    acceptingAnswers = true;
+};
+
+
+startGame();
+
 //-------------------------------------------------------------------------------- End Game
 
 //-------------------------------------------------------------------------------- High Scores
+
+
