@@ -6,6 +6,8 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("ans-choice"));
 const correctAnsBonus = 1;
 const maxQuestions = 3; //Keeping at 3 for tesiting functionality, will be changed to 10 later.
+const questionCounterDisplay = document.getElementById("question-counter");
+const currentScoreDisplay = document.getElementById("current-score");
 
 let availableQuestions = [];
 let currentQuestion = {};
@@ -48,12 +50,16 @@ function startGame () {
 
 
 function getNewQuestion() {
-        //Checking that there are still available questions (temporary rule for testing functionality)
-    if (availableQuestions.length === 0) {
+        //Setting maximum questions to 3(will change to 10 later in development)
+    if (questionCounter >= maxQuestions) {
 
         //Redirect to end game page if no more questions to ask
         return window.location.assign("/end-game.html");
     }
+        //Question counter for HUD incrementing 
+    questionCounter++;
+    questionCounterDisplay.innerText = `Question ${questionCounter}`;
+
 
         //Randomizes order of questions and display them in game
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -85,6 +91,10 @@ choices.forEach(choice => {
         //Defining correct/incorrect to user choice  
         const selectedChoiceClass = selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
 
+        if (selectedChoiceClass === "correct") {
+            updateCurrentScore(correctAnsBonus);
+        }
+
         //Add correct/incorrect class to user choice
         selectedChoice.classList.add(selectedChoiceClass);
 
@@ -96,6 +106,11 @@ choices.forEach(choice => {
         }, 1000);
     });
 });
+
+function updateCurrentScore(num) {
+    score += num;
+    currentScoreDisplay.innerText = `Score: ${score}`;
+}
 
 startGame();
 
