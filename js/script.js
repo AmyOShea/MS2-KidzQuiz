@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 //-------------------------------------------------------------------------------- General Variables
 
 const question = document.getElementById("question");
@@ -5,6 +7,7 @@ const choices = Array.from(document.getElementsByClassName("ans-choice"));
 const correctAnsBonus = 1;
 const maxQuestions = 3; //Keeping at 3 for tesiting functionality, will be changed to 10 later.
 
+let availableQuestions = [];
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -59,7 +62,7 @@ function getNewQuestion() {
 
         //Display all answer choices in game
     choices.forEach( choice => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion['ans' + number];
     });
         
@@ -68,7 +71,7 @@ function getNewQuestion() {
 
         //Allow user to answer
     acceptingAnswers = true;
-};
+}
 
 choices.forEach(choice => {
     choice.addEventListener("click", e => {
@@ -77,13 +80,13 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
 
         //To compare selected answer number to correct answer number
-        const selectedAnswer = selectedChoice.dataset["number"];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         //Defining correct/incorrect to user choice  
         const selectedChoiceClass = selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
 
         //Add correct/incorrect class to user choice
-        selectedChoice.classList.add(selectedChoiceClass)
+        selectedChoice.classList.add(selectedChoiceClass);
 
 
         //Remove correct/incorrect class to user choice before new question diplayed

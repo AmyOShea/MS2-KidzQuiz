@@ -73,6 +73,35 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 + [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.
 + [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.
+# Testing
+## Validator Testing
+At the completion or heavy editing of sections, I used the following websites to check my code for syntax errors:
++ HTML - 
++ CSS - 
++ JavaScript - [https://jshint.com/](https://jshint.com/)
+## JSHint Testing
++ Test 01 - Commit 12
+
+![JSHint Result Page](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/testing/01-fix-01.png "First JSHint Result")
+
+The Following Errors were diplayed and fixed: 
+
++ **'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).**
++ **'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).** 
++ **'spread operator' is only available in ES6 (use 'esversion: 6'). = line 44**
++ **'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').**
+  + All of the abover were fixed by adding '/*jshint esversion: 6 */' to the top of the JavaScript file.
++ **['number'] is better written in dot notation.**
+  + Used dot notation alternaive where applicable.
++ **One Undefined variable = availableQuestions**
+  + Declared availableQuestions as an empty array in the 'General Variable' area.
++ **5 Unused variables**
+  + These will be later decalred and utilized
+
+Outside of these main issues, there were a couple of semicolon issues that were easily fixable. 
+
+## Testing User Stories from (UX) Section
+
 # Credits
 ## Content
 Two resources were used to compile most of the questions:
