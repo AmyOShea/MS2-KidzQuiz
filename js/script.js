@@ -40,7 +40,6 @@ let questions = [
 
 function startGame () {
     availableQuestions = [...questions];
-    console.log(availableQuestions); //testing functionality, will be removed.
     getNewQuestion();
 }
 
@@ -76,10 +75,22 @@ choices.forEach(choice => {
         if(!acceptingAnswers) return;
         acceptingAnswers = false;
         const selectedChoice = e.target;
+
         //To compare selected answer number to correct answer number
         const selectedAnswer = selectedChoice.dataset["number"];
-        getNewQuestion(); 
 
+        //Defining correct/incorrect to user choice  
+        const selectedChoiceClass = selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
+
+        //Add correct/incorrect class to user choice
+        selectedChoice.classList.add(selectedChoiceClass)
+
+
+        //Remove correct/incorrect class to user choice before new question diplayed
+        setTimeout(() => {
+            selectedChoice.classList.remove(selectedChoiceClass);
+            getNewQuestion(); 
+        }, 1000);
     });
 });
 
