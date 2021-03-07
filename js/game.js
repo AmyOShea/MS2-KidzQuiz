@@ -53,6 +53,9 @@ function getNewQuestion() {
         //Setting maximum questions to 3(will change to 10 later in development)
     if (questionCounter >= maxQuestions) {
 
+        //Save most recent score to local storage
+        localStorage.setItem("recentScore", score);
+
         //Redirect to end game page if no more questions to ask
         return window.location.assign("/end-game.html");
     }
