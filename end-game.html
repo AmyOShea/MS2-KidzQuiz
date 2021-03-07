@@ -10,12 +10,28 @@
 <body>
     <div class="game-over">
         <h1>Game Over</h1>
-        <h3 id="final-score">Your final score: </h3>
-        <input>
-        <a href="rules.html" class="btn">Rules</a>
-        <a href="game.html" class="btn">Replay</a>
-        <a href="high-scores.html" class="btn">Scores</a>
+        <h3 id="final-score"></h3>
+
+
+
+        <form>
+            <input type="text" name="username" id="username" placeholder="Your Name">
+            <button type="submit" class="btn submit-btn" id="save-high-score" onclick="saveHighScore(event)">Submit</button>
+        
+        
+        
+        </form>
+
+
+
+        <div>
+            <a href="rules.html" class="btn">Rules</a>
+            <a href="game.html" class="btn">Replay</a>
+            <a href="high-scores.html" class="btn">Scores</a>
+        </div>
+
+
+
     </div>
 </body>
-<script src="js/script.js"></script>
 </html>
