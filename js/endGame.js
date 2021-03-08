@@ -3,39 +3,43 @@
 //-------------------------------------------------------------------------------- General Variables
 
 const username = document.getElementById("username");
-const saveScoreBtn = document.getElementById("save-high-score");
+const saveBtn = document.getElementById("save-high-score")
+const endScore = document.getElementById("end-score");
 const recentScore = localStorage.getItem("recentScore");
-const endScore = document.getElementById("end-score")
-const highScores = JSON.parse(localStorage.getItem("highscores")) || [];
-
-
-
-//----------------------------------------------------------------- Save/Display high scores
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 
     //Display final score to user
 endScore.innerText = `Final Score: ${recentScore}`;
 
 
-function saveHighScore(event) {
+//----------------------------------------------------------------- Save High Score
+
+saveHighScore = (event) => {
+    console.log("clicked");
+
         // Prevent form reload when save button clicked
     event.preventDefault();
 
         //Create key values for score
     const score = {
-        score: recentScore,
+        score: score,
         name: username.value
     };
+
         //Add score to highscores array
     highScores.push(score);
 
-        //Set max saved scores to 2 (keeping at 2 for testing, wil be changed later)
-    highScores.splice(2);
+        //Organize scores highest to lowest
+    highScores.sort((a,b) => b.score - a.score);
 
-        //Update highscores as a string
+        //Set max saved scores to 5
+    highScores.splice(5);
+
+        //Update & save highscores to local storage
     localStorage.setItem("highScores", JSON.stringify(highScores));
 
-    console.log(highScores);
+        //Redirect to high scores page once submitted
+    return window.location.assign("high-scores.html");
+
 };
-
-
