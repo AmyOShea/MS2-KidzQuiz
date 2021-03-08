@@ -16,14 +16,13 @@ endScore.innerText = `Final Score: ${recentScore}`;
 //----------------------------------------------------------------- Save High Score
 
 saveHighScore = (event) => {
-    console.log("clicked");
 
         // Prevent form reload when save button clicked
     event.preventDefault();
 
         //Create key values for score
     const score = {
-        score: score,
+        score: recentScore,
         name: username.value
     };
 
@@ -40,6 +39,6 @@ saveHighScore = (event) => {
     localStorage.setItem("highScores", JSON.stringify(highScores));
 
         //Redirect to high scores page once submitted
-    return window.location.assign("high-scores.html");
+    return window.location.assign("/high-scores.html");
 
 };
