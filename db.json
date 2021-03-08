@@ -1,217 +1,212 @@
-{
-  "results": [
+[
     {
-      "question": "How many legs does a spider have?",
-      "correct": 2,
-      "ans1": 6,
-      "ans2": 8,
-      "ans3": 10
+        "question": "How many legs does a spider have?",
+        "correct": 2,
+        "ans1": "6",
+        "ans2": "8",
+        "ans3": "10"
     },
     {
-      "question": "What gas do we breathe to stay alive?",
-      "correct": 1,
-      "ans1": "Oxygen",
-      "ans2": "Argon",
-      "ans3": "Nitrogen"
+        "question": "What gas do we breathe to stay alive?",
+        "correct": 1,
+        "ans1": "Oxygen",
+        "ans2": "Argon",
+        "ans3": "Nitrogen"
     },
     {
-      "question": "What is the largest country in the world?",
-      "correct": 1,
-      "ans1": "Russia",
-      "ans2": "Italy",
-      "ans3": "Australia"
+        "question": "What is the largest country in the world?",
+        "correct": 1,
+        "ans1": "Russia",
+        "ans2": "Italy",
+        "ans3": "Australia"
     },
     {
-      "question": "Which word doesn't rhyme with the others?",
-      "correct": 3,
-      "ans1": "Spur",
-      "ans2": "Blur",
-      "ans3": "Chair"
+        "question": "Which word doesn't rhyme with the others?",
+        "correct": 3,
+        "ans1": "Spur",
+        "ans2": "Blur",
+        "ans3": "Chair"
     },
     {
-      "question": "What is the name of the organ that pumps blood around the body?",
-      "correct": 2,
-      "ans1": "Lungs",
-      "ans2": "Heart",
-      "ans3": "Brain"
+        "question": "What is the name of the organ that pumps blood around the body?",
+        "correct": 2,
+        "ans1": "Lungs",
+        "ans2": "Heart",
+        "ans3": "Brain"
     },
     {
-      "question": "Who was the first man to walk on the moon?",
-      "correct": 1,
-      "ans1": "Neil Armstrong",
-      "ans2": "Buzz Lightyear",
-      "ans3": "George Washington"
+        "question": "Who was the first man to walk on the moon?",
+        "correct": 1,
+        "ans1": "Neil Armstrong",
+        "ans2": "Buzz Lightyear",
+        "ans3": "George Washington"
     },
     {
-      "question": "If you suffer from arachnophobia, what are you scared of?",
-      "correct": 3,
-      "ans1": "Lightning",
-      "ans2": "Clowns",
-      "ans3": "Spiders"
+        "question": "If you suffer from arachnophobia, what are you scared of?",
+        "correct": 3,
+        "ans1": "Lightning",
+        "ans2": "Clowns",
+        "ans3": "Spiders"
     },
     {
-      "question": "How many planets are in our solar system?",
-      "correct": 1,
-      "ans1": "8",
-      "ans2": "10",
-      "ans3": "12"
-    },
-     {
-      "question": "How many sides does an octagon have?",
-      "correct": 2,
-      "ans1": "7",
-      "ans2": "8",
-      "ans3": "9"
+        "question": "How many planets are in our solar system?",
+        "correct": 1,
+        "ans1": "8",
+        "ans2": "10",
+        "ans3": "12"
     },
     {
-      "question": "18-6 = …?",
-      "correct": 3,
-      "ans1": "10",
-      "ans2": "11",
-      "ans3": "12"
+        "question": "How many sides does an octagon have?",
+        "correct": 2,
+        "ans1": "7",
+        "ans2": "8",
+        "ans3": "9"
     },
     {
-      "question": "5X5 = …?",
-      "correct": 2,
-      "ans1": "20",
-      "ans2": "25",
-      "ans3": "30"
+        "question": "18-6 = …?",
+        "correct": 3,
+        "ans1": "10",
+        "ans2": "11",
+        "ans3": "12"
     },
     {
-      "question": "What is the biggest animal in the ocean?",
-      "correct": 3,
-      "ans1": "Shark",
-      "ans2": "Dolphin",
-      "ans3": "Blue Whale"
+        "question": "5X5 = …?",
+        "correct": 2,
+        "ans1": "20",
+        "ans2": "25",
+        "ans3": "30"
     },
     {
-      "question": "What do you call a baby kangaroo?",
-      "correct": 1,
-      "ans1": "Joey",
-      "ans2": "Georgie",
-      "ans3": "Jamie"
+        "question": "What is the biggest animal in the ocean?",
+        "correct": 3,
+        "ans1": "Shark",
+        "ans2": "Dolphin",
+        "ans3": "Blue Whale"
     },
     {
-      "question": "What is the ornage bit in the middle og an egg called?",
-      "correct": 1,
-      "ans1": "Yolk",
-      "ans2": "Goop",
-      "ans3": "Blob"
-    },
-
-    {
-      "question": "What country are the Pyramids in",
-      "correct": 1,
-      "ans1": "Egypt",
-      "ans2": "Greece",
-      "ans3": "India"
-    },
-    
-    {
-      "question": "What is the next number in the sequence? 26, 31, 36, 41 ...",
-      "correct": 2,
-      "ans1": "42",
-      "ans2": "46",
-      "ans3": "48"
+        "question": "What do you call a baby kangaroo?",
+        "correct": 1,
+        "ans1": "Joey",
+        "ans2": "Georgie",
+        "ans3": "Jamie"
     },
     {
-      "question": "What is the tallest animal in the world?",
-      "correct": 3,
-      "ans1": "Llama",
-      "ans2": "Horse",
-      "ans3": "Giraffe"
-    },
-
-    {
-      "question": "What is the 10th letter of the alphabet?",
-      "correct": 1,
-      "ans1": "J",
-      "ans2": "K",
-      "ans3": "L"
+        "question": "What is the orange part in the middle og an egg called?",
+        "correct": 1,
+        "ans1": "Yolk",
+        "ans2": "Goop",
+        "ans3": "Blob"
     },
     {
-      "question": "Which country is home to the Eiffel Tower and Disneyland?",
-      "correct": 1,
-      "ans1": "France",
-      "ans2": "Ireland",
-      "ans3": "Spain"
+        "question": "What country are the Pyramids in",
+        "correct": 1,
+        "ans1": "Egypt",
+        "ans2": "Greece",
+        "ans3": "India"
     },
     {
-      "question": "Which word doesn't rhyme with the others?",
-      "correct": 3,
-      "ans1": "Beak",
-      "ans2": "Leak",
-      "ans3": "Leap"
+        "question": "What is the next number in the sequence? 26, 31, 36, 41 ...",
+        "correct": 2,
+        "ans1": "42",
+        "ans2": "46",
+        "ans3": "48"
     },
     {
-      "question": "200 + 300 = …?",
-      "correct": 2,
-      "ans1": "400",
-      "ans2": "500",
-      "ans3": "600"
+        "question": "What is the tallest animal in the world?",
+        "correct": 3,
+        "ans1": "Llama",
+        "ans2": "Horse",
+        "ans3": "Giraffe"
     },
     {
-      "question": "What is the capital city of England?",
-      "correct": 1,
-      "ans1": "London",
-      "ans2": "Manchester",
-      "ans3": "Birmingham"
+        "question": "What is the 10th letter of the alphabet?",
+        "correct": 1,
+        "ans1": "J",
+        "ans2": "K",
+        "ans3": "L"
     },
     {
-      "question": "Who is Mickey Mouse's girlfriend?",
-      "correct": 1,
-      "ans1": "Oxygen",
-      "ans2": "Argon",
-      "ans3": "Nitrogen"
+        "question": "Which country is home to the Eiffel Tower and Disneyland?",
+        "correct": 1,
+        "ans1": "France",
+        "ans2": "Ireland",
+        "ans3": "Spain"
     },
     {
-      "question": "Which planet is closest to the sun?",
-      "correct": 3,
-      "ans1": "Jupiter",
-      "ans2": "Venus",
-      "ans3": "Mercury"
+        "question": "Which word doesn't rhyme with the others?",
+        "correct": 3,
+        "ans1": "Beak",
+        "ans2": "Leak",
+        "ans3": "Leap"
     },
     {
-      "question": "Earth is located in which galaxy?",
-      "correct": 2,
-      "ans1": "Mars Bar",
-      "ans2": "Milky Way",
-      "ans3": "Snickers"
+        "question": "200 + 300 = …?",
+        "correct": 2,
+        "ans1": "400",
+        "ans2": "500",
+        "ans3": "600"
     },
     {
-      "question": "What is the slowest animal in the world",
-      "correct": 2,
-      "ans1": "Mouse",
-      "ans2": "Sloth",
-      "ans3": "Cow"
+        "question": "What is the capital city of England?",
+        "correct": 1,
+        "ans1": "London",
+        "ans2": "Manchester",
+        "ans3": "Birmingham"
     },
     {
-      "question": "What is the name of the river that flows through Dublin?",
-      "correct": 1,
-      "ans1": "Liffey",
-      "ans2": "Thames",
-      "ans3": "Amazon"
+        "question": "Who is Mickey Mouse's girlfriend?",
+        "correct": 3,
+        "ans1": "Mandy Mouse",
+        "ans2": "Michelle Mouse",
+        "ans3": "Minnie Mouse"
     },
     {
-      "question": "What do you have to stick to an envelope to send a letter?",
-      "correct": 3,
-      "ans1": "Sellotape",
-      "ans2": "Glue",
-      "ans3": "Stamp"
+        "question": "Which planet is closest to the sun?",
+        "correct": 3,
+        "ans1": "Jupiter",
+        "ans2": "Venus",
+        "ans3": "Mercury"
     },
     {
-      "question": "Choose the correct spelling: I left my book on the _______.",
-      "correct": 3,
-      "ans1": "Tayble",
-      "ans2": "Tabble",
-      "ans3": "Table"
+        "question": "Earth is located in which galaxy?",
+        "correct": 2,
+        "ans1": "Mars Bar",
+        "ans2": "Milky Way",
+        "ans3": "Snickers"
     },
     {
-      "question": "Choose the correct spelling: I saw my ________ at school today.",
-      "correct": 1,
-      "ans1": "Teacher",
-      "ans2": "Teecher",
-      "ans3": "Teachar"
-    }  
-  ]
-}
+        "question": "What is the slowest animal in the world",
+        "correct": 2,
+        "ans1": "Mouse",
+        "ans2": "Sloth",
+        "ans3": "Cow"
+    },
+    {
+        "question": "What is the name of the river that flows through Dublin?",
+        "correct": 1,
+        "ans1": "Liffey",
+        "ans2": "Thames",
+        "ans3": "Amazon"
+    },
+    {
+        "question": "What do you have to stick to an envelope to send a letter?",
+        "correct": 3,
+        "ans1": "Sellotape",
+        "ans2": "Glue",
+        "ans3": "Stamp"
+    },
+    {
+        "question": "Choose the correct spelling: I left my book on the _______.",
+        "correct": 3,
+        "ans1": "Tayble",
+        "ans2": "Tabble",
+        "ans3": "Table"
+    },
+    {
+        "question": "Choose the correct spelling: I saw my ________ at school today.",
+        "correct": 1,
+        "ans1": "Teacher",
+        "ans2": "Teecher",
+        "ans3": "Teachar"
+    }
+]
