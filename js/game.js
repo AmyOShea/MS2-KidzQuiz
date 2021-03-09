@@ -29,7 +29,7 @@ fetch("db.json")
         //Setting pulled data into questions array
 .then(loadedQuesitons => {
     questions = loadedQuesitons;
-
+        // Once questions have loaded, loader hidden and game shows
     loader.classList.add("hidden");
     game.classList.remove("hidden");
 
@@ -37,10 +37,6 @@ fetch("db.json")
         //Game starts AFTER questions are loaded
     startGame();
 });
-
-
-
-
 
 //--------------------------------------------------------------------------------  Game Play
 

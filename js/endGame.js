@@ -12,6 +12,12 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
     //Display final score to user
 endScore.innerText = `Final Score: ${recentScore}`;
 
+    //Submit button disabled until name is entered
+username.addEventListener('keyup', () => {
+    saveBtn.disabled = !username.value;
+});
+
+
 
 //----------------------------------------------------------------- Save High Score
 
