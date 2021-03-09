@@ -1,4 +1,6 @@
-
+.hidden {
+    display: none;
+}
 
 /*------------------------------------------------ Game Play*/
 
@@ -10,4 +12,42 @@
 
 .btn.incorrect {
     background-color: red;
+}
+
+/*------------------------------------------------ Loader*/
+
+#loader {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+}
+
+#loader-text {
+    text-align: center;
+    padding-top: 50px;
+}
+
+img.apple {
+    height: 200px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0%, 100% {
+		transform: translatey(0px);
+    }
+	50% {
+		transform: translatey(-40px);
+    }
+
+}
+
+#loader-text {
+    text-align: center;
+    padding-top: 30px;
 }

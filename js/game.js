@@ -8,6 +8,8 @@ const correctAnsBonus = 1;
 const maxQuestions = 10;
 const questionCounterDisplay = document.getElementById("question-counter");
 const currentScoreDisplay = document.getElementById("current-score");
+const game = document.getElementById("game-play");
+const loader = document.getElementById("loader");
 
 let availableQuestions = [];
 let currentQuestion = {};
@@ -27,9 +29,17 @@ fetch("db.json")
         //Setting pulled data into questions array
 .then(loadedQuesitons => {
     questions = loadedQuesitons;
+
+    loader.classList.add("hidden");
+    game.classList.remove("hidden");
+
+
         //Game starts AFTER questions are loaded
     startGame();
 });
+
+
+
 
 
 //--------------------------------------------------------------------------------  Game Play
