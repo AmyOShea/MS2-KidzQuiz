@@ -1,6 +1,61 @@
+@font-face {
+    font-family: chawp;
+    src: url("../css/fonts/CHAWP.woff2") format("woff2"),
+        url("../css/fonts/CHAWP.woff") format("woff"),
+            url("../css/fonts/CHAWP.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "chawp", sans-serif;
+    background-image: url("../assets/images/game-background.webp");
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
 .hidden {
     display: none;
 }
+
+/*------------------------------------------------ Home Page*/
+
+.welcome-page {
+    text-align: center;
+    background-image: url("../assets/images/greenboard.png");
+    background-size: 100% 100%;
+    height: 80vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inner-info {
+    margin-top: 100px;
+    
+}
+
+h1 {
+    padding-top: 11vh;
+    padding-bottom: .8rem;
+}
+
+a.navigation-btn {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+
+}
+
+.inner-info {
+    margin-top: 100px;
+    
+}
+
+
+
+
+
 
 /*------------------------------------------------ Game Play*/
 
