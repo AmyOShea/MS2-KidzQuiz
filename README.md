@@ -32,6 +32,7 @@ The overall feel of this website is to emulate and old school classroom setting.
 I'm sticking to a simple colour pallete to cause little to no distraction for a child to be able to focus. 
 ### Typography
 To go with the school theme, I wanted a typface that would emulate the look of chalk on a board.
+I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) becuse it was open source and it fit the school theme. I was then able to conver the .tff file to both .woff and .woff2 files for cross browser compatibility.
 ## Wireframes & Design
 ### Wireframes
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
@@ -70,6 +71,7 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [GitPod](https://www.gitpod.io/) used to develop project and orgainse version control.
 + [GitHub](https://pages.github.com/) Pages used to deploy the site.
 + [Balsamiq](https://balsamiq.com/) used to create wireframes.
++ [Transfonter](https://transfonter.org/) used to convert font from .tff to .woff and .woff2.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 + [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.
 + [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.

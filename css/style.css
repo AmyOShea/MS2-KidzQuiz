@@ -22,39 +22,49 @@ body {
 /*------------------------------------------------ Home Page*/
 
 .welcome-page {
+    background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43));
     text-align: center;
-    background-image: url("../assets/images/greenboard.png");
-    background-size: 100% 100%;
-    height: 80vh;
-    width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-bottom: 50px;
+    margin-top: 10vh;
+    padding-bottom: 30px;
+    border: 12px solid rgb(92, 58, 8);
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43))
+
 }
 .inner-info {
-    margin-top: 100px;
+    margin-top: 10px;
     
 }
 
 h1 {
-    padding-top: 11vh;
-    padding-bottom: .8rem;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 4rem;
 }
 
 a.navigation-btn {
+    text-align: center;
+    color: rgb(98, 235, 98);
+    border: 3px solid rgb(98, 235, 98);
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 4rem;
+}
+
+a.navigation-btn:hover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: none;
-
+    background-color: rgb(98, 235, 98);
+    border: 3px solid white;
 }
-
-.inner-info {
-    margin-top: 100px;
-    
-}
-
-
-
-
 
 
 /*------------------------------------------------ Game Play*/
@@ -99,7 +109,6 @@ img.apple {
 	50% {
 		transform: translatey(-40px);
     }
-
 }
 
 #loader-text {
