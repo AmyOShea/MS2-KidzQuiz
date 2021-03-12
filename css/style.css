@@ -21,7 +21,7 @@ body {
 
 /*------------------------------------------------ Home Page*/
 
-.welcome-page {
+.green-board {
     background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43));
     text-align: center;
     margin-bottom: 50px;
@@ -30,12 +30,11 @@ body {
     border: 12px solid rgb(92, 58, 8);
     border-radius: 10px;
     box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.6);
-    background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43))
-
+    background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43));
 }
 .inner-info {
     margin-top: 10px;
-    
+    margin-bottom: 20px;    
 }
 
 h1 {
@@ -57,7 +56,7 @@ a.navigation-btn {
     border: 3px solid rgb(98, 235, 98);
     font-size: 2rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-    margin-bottom: 4rem;
+    margin-bottom: 10px;
 }
 
 a.navigation-btn:hover {
@@ -116,4 +115,17 @@ img.apple {
     padding-top: 30px;
 }
 
-/*------------------------------------------------ Loader*/
+/*------------------------------------------------ high-scores*/
+
+#scores-header {
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.table {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    max-width: 40vw;
+    margin-bottom: 3rem;
+}

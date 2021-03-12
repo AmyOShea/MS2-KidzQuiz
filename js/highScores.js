@@ -11,7 +11,7 @@ tableBody.innerHTML = highScores.map(score =>
     { return `
     <tr>
         <td>${score.name}</td>
-        <td>${score.score}</td>;
+        <td>${score.score}</td>
     </tr>`
 }).join("");
 
