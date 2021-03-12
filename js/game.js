@@ -54,7 +54,7 @@ function getNewQuestion() {
         localStorage.setItem("recentScore", score);
 
         //Redirect to end game page if no more questions to ask
-        return window.location.assign("/end-game.html");
+        return window.location.assign("end-game.html");
     }
         //Question counter for HUD incrementing 
     questionCounter++;

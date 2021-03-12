@@ -45,6 +45,6 @@ saveHighScore = (event) => {
     localStorage.setItem("highScores", JSON.stringify(highScores));
 
         //Redirect to high scores page once submitted
-    return window.location.assign("/high-scores.html");
+    return window.location.assign("high-scores.html");
 
 };
