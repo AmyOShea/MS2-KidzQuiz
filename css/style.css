@@ -19,6 +19,25 @@ body {
     display: none;
 }
 
+/*------------------------------------------------ General Buttons*/
+
+
+a.navigation-btn, .ans-choice {
+    text-align: center;
+    color: rgb(98, 235, 98);
+    border: 3px solid rgb(98, 235, 98);
+    font-size: 2rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+a.navigation-btn:hover, .ans-choice:hover {
+    color: white;
+    background-color: rgb(98, 235, 98);
+    border: 3px solid white;
+}
+
+
 /*------------------------------------------------ Home Page*/
 
 .green-board {
@@ -50,32 +69,35 @@ h3 {
     padding-bottom: 4rem;
 }
 
-a.navigation-btn {
-    text-align: center;
-    color: rgb(98, 235, 98);
-    border: 3px solid rgb(98, 235, 98);
-    font-size: 2rem;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-    margin-bottom: 10px;
-}
-
-a.navigation-btn:hover {
-    color: white;
-    background-color: rgb(98, 235, 98);
-    border: 3px solid white;
-}
-
 
 /*------------------------------------------------ Game Play*/
 
+.hud {
+    margin-top: 2.5vh;
+    margin-bottom: 3vh;
+}
 
-/* Using specificity to override Bootstrap styling*/
+#question {
+    font-size: 2.2rem;
+}
+
+.ans-btns {
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
 .btn.correct {
     background-color: green;
 }
 
 .btn.incorrect {
     background-color: red;
+}
+
+#game-to-home {
+    font-size: 1.2rem;
+    color: rgb(77, 187, 77);
+    border: 3px solid rgb(77, 187, 77);
 }
 
 /*------------------------------------------------ Loader*/
