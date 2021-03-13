@@ -8,17 +8,24 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="game-over">
-        <h1>Game Over</h1>
+    <div class="game-over green-board container">
+        <h1 id="end-heading">Game Over</h1>
         <h3 id="end-score">Final Score : 0</h3>
-        <form>
+        <p id="name-inst">Enter your name below to join the score board:</p>
+        <form class="row justify-content-center">
             <input type="text" name="username" id="username" placeholder="Your Name!"/>
-            <button type="submit" class="btn" id="save-high-score" onclick="saveHighScore(event)" disabled>Submit</button>
+            <button type="submit" class="btn submit-btn" id="save-high-score" onclick="saveHighScore(event)" disabled>Submit</button>
         </form>
-        <div>
-            <a href="rules.html" class="btn">Rules</a>
-            <a href="game.html" class="btn">Replay</a>
-            <a href="high-scores.html" class="btn">Scores</a>
+        <div class="navigation-buttons row justify-content-center">
+            <div class="col-md-3 col-sm-12">
+                <a href="rules.html" class="btn navigation-btn">Rules</a>
+            </div>
+            <div class="col-md-3 col-sm-12">
+                <a href="game.html" class="btn navigation-btn">Replay</a>
+            </div>
+                <div class="col-md-3 col-sm-12">
+            <a href="high-scores.html"  class="btn navigation-btn">Scores</a>
+            </div>
         </div>
     </div>
     <script src="js/endGame.js"></script>

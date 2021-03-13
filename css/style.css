@@ -22,7 +22,7 @@ body {
 /*------------------------------------------------ General Buttons*/
 
 
-a.navigation-btn, .ans-choice {
+a.navigation-btn, .ans-choice, .submit-btn {
     text-align: center;
     color: rgb(98, 235, 98);
     border: 3px solid rgb(98, 235, 98);
@@ -31,7 +31,7 @@ a.navigation-btn, .ans-choice {
     margin-bottom: 10px;
 }
 
-a.navigation-btn:hover, .ans-choice:hover {
+a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover {
     color: white;
     background-color: rgb(98, 235, 98);
     border: 3px solid white;
@@ -162,7 +162,53 @@ img.apple {
     padding-top: 30px;
 }
 
-/*------------------------------------------------ high-scores*/
+
+/*------------------------------------------------ End Game*/
+
+#end-heading {
+    padding-bottom: 1.5rem;
+    font-size: 4.5rem;
+}
+
+#end-score {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+#name-inst {
+    margin: 0;
+}
+
+form {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+input {
+
+    font-size: 1.2rem;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+
+input, .submit-btn {
+  padding: 0;
+  margin: 0 .3rem 0 .3rem;
+  box-sizing: border-box;
+}
+
+
+::placeholder {
+    color: white;
+}
+
+.submit-btn {
+    font-size: 1.2rem;
+}
+
+/*------------------------------------------------ High Scores*/
 
 #scores-header {
     font-size: 4.5rem;
