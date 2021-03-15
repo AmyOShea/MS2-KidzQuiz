@@ -4,7 +4,9 @@ Kidz Quiz is an interactive website designed for children to test their knowledg
 
 At this point in development, this will be aimed at children aged 7-8 yrs old and the questions will consist of Math, English, Geography, Science, Animals and General Knowledge. 
 
-You can find the live site [here]().
+You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
+
+![KidzQuiz](assets/images/README/responsinator-mock.PNG)
 
 # User Experience
 
@@ -27,12 +29,12 @@ You can find the live site [here]().
 
 ## Design
 ### Overall Feel
-The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated, the imagery is instantly recognisable. 
+The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated due to the fact that classrooms don't use greenboards or chalk any more, I believe that the imagery is instantly recognisable. 
 ### Colour Scheme
 I'm sticking to a simple colour pallete to cause little to no distraction for a child to be able to focus. 
 ### Typography
 To go with the school theme, I wanted a typface that would emulate the look of chalk on a board.
-I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) becuse it was open source and it fit the school theme. I was then able to conver the .tff file to both .woff and .woff2 files for cross browser compatibility.
+I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) becuse it was open source and it fit the school theme. I was then able to convert the .tff file to both .woff and .woff2 files for cross browser compatibility.
 ## Wireframes & Design
 ### Wireframes
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
@@ -53,10 +55,11 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 ## Current Features
 + Randomised, age-appropriate questions covering a range of subjects.
 + Continuous score updates as the game progresses. 
-+ Ability to enter name at the end of the game to add to a leader board 
++ Ability to enter name at the end of the game to add to a local leader board.
 ## Possible Future Features
-+ This site could be expanded include different questions based on age. 
-+ There could be an option t oschoose a specific subject to test knowledge on rather than a random selection. 
++ This site could be expanded include different questions based on age.
++ There could be an option to schoose a specific subject to test knowledge on rather than a random selection. 
++ Global leaderboard rather than local. 
 # Technologies Used
 ## Languages Used
 + [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -77,32 +80,84 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.
 # Testing
 ## Validator Testing
-At the completion or heavy editing of sections, I used the following websites to check my code for syntax errors:
-+ HTML - 
-+ CSS - 
-+ JavaScript - [https://jshint.com/](https://jshint.com/)
-## JSHint Testing
-+ Test 01 - Commit 12
-
-![JSHint Result Page](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/testing/01-fix-01.png "First JSHint Result")
-
-The Following Errors were diplayed and fixed: 
-
-+ **'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).**
-+ **'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).** 
-+ **'spread operator' is only available in ES6 (use 'esversion: 6'). = line 44**
-+ **'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').**
-  + All of the abover were fixed by adding '/*jshint esversion: 6 */' to the top of the JavaScript file.
-+ **['number'] is better written in dot notation.**
-  + Used dot notation alternaive where applicable.
-+ **One Undefined variable = availableQuestions**
-  + Declared availableQuestions as an empty array in the 'General Variable' area.
-+ **5 Unused variables**
-  + These will be later decalred and utilized
-
-Outside of these main issues, there were a couple of semicolon issues that were easily fixable. 
+At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
++ [HTML](https://validator.w3.org/) 
++ [CSS](https://jigsaw.w3.org/css-validator/)
++ [JavaScript](https://jshint.com/)
 
 ## Testing User Stories from (UX) Section
+
+## Bugs & Fixes
+1. After the first run through the JS Validator, I recieved the following error: 
+
+![autofill bug](assets/images/README/testing/es6-bug.PNG)  
+
+  After a bit of research I learned that if you declare that you're using ES6 at the top of your JavaScript file, this error will be removed. I added the following line at the top of my JavaScript file:  
+
+![autofill bug](assets/images/README/testing/es6-bug-fix.PNG)
+
+---
+2. Initially I wanted the JavaScript to all be on one page. However, because there were seperate HTML pages that were being used, there were elements that JS was trying to access that didn't exist on certain pages: 
+
+![autofill bug](assets/images/README/testing/HTML-page-bug.PNG)
+
+As a result, I seperated the JavaScript into seperate files.
+
+However, after a bit of research, I learned that I could use an 'if statement' to decide if that element existed and, if not, ignore the JavaScript function. 
+
+---
+
+3. Afer another run through the JS validator, I recieved the following error: 
+
+![autofill bug](assets/images/README/testing/var-not-declared-01.PNG)
+
+I tried a few fixes (including declaring it as a vairable on that line) but each fix seemed to cause more problems. As a solution, I added saveHighScores to my variables section but didn't give it any value: 
+
+![autofill bug](assets/images/README/testing/var-not-declared-02.PNG)  
+
+---
+
+## Known Bugs
++ When the user is given the option to input their name to the leaderboard, the auto fill feature is createing a styling issue. When a user manually types their name into the input area, the styling remains consistant with the rest of the page. However, when an auto fill option is clicked, the styling changes (as below):
+
+![autofill bug](assets/images/README/testing/autofill.PNG)
+
+I've tried to find a fix for this but according to [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill), there are set stylings that are incredibly difficult to override. I'm happy enough to let this go as, in the grand scheme of the project, it is not a huge deal. 
+
+# Deployment
+
+## Deployment through GitHub Pages
+This site was deployed through GitHub Pages using the following steps:
+
++ Log into GitHub.
++ Locate the repository.
++ Locate the settings option along the options bar.
++ Locate GitHub Pages options towards the bottom of the page.
++ In 'Source' dropdown, select 'Master' from the branch options.
++ Click the save button.
++ The site is now published though it may not be accesible straight away.
++ The site URL will be visable on the green bar under the section header. This will remain there permanently and you can refer back to it at any time.
+
+## Cloning Project
+
++ Log into GitHub.
++ Locate the repository.
++ Click the 'Code' dropdown above the file list.
++ Copy the URL for the repository.
++ Open Git Bash on your device.
++ Change the current working directory to the location where you want the cloned directory.
++ Type git clone in the CLI and then paste the URL you copied earlier. This is what it should look like:
+  + $ git clone https://github.com/AmyOShea/MS2-KidzQuiz.git
++ Press Enter to create your local clone.
+
+
+
+
+
+
+
+
+
 
 # Credits
 ## Content
