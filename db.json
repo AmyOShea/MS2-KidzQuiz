@@ -39,7 +39,7 @@
         "correct": 1,
         "ans1": "Neil Armstrong",
         "ans2": "Buzz Lightyear",
-        "ans3": "George Washington"
+        "ans3": "Barack Obama"
     },
     {
         "question": "If you suffer from arachnophobia, what are you scared of?",
@@ -79,8 +79,8 @@
     {
         "question": "What is the biggest animal in the ocean?",
         "correct": 3,
-        "ans1": "Shark",
-        "ans2": "Dolphin",
+        "ans1": "Pink Shark",
+        "ans2": "Red Dolphin",
         "ans3": "Blue Whale"
     },
     {
@@ -157,7 +157,7 @@
         "question": "Who is Mickey Mouse's girlfriend?",
         "correct": 3,
         "ans1": "Mandy Mouse",
-        "ans2": "Michelle Mouse",
+        "ans2": "Molly Mouse",
         "ans3": "Minnie Mouse"
     },
     {

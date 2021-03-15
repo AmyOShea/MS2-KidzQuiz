@@ -29,6 +29,7 @@ a.navigation-btn, .ans-choice, .submit-btn {
     font-size: 2rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
+    min-width: 70%;
 }
 
 a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover {
@@ -36,6 +37,7 @@ a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover {
     background-color: rgb(98, 235, 98);
     border: 3px solid white;
 }
+
 
 
 /*------------------------------------------------ Home Page*/
@@ -113,6 +115,10 @@ li {
 
 .btn.correct {
     background-color: green;
+}
+
+.ans-choice {
+    min-width: 85%;
 }
 
 .btn.incorrect {
