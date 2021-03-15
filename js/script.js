@@ -10,6 +10,12 @@ const questionCounterDisplay = document.getElementById("question-counter");
 const currentScoreDisplay = document.getElementById("current-score");
 const game = document.getElementById("game-play");
 const loader = document.getElementById("loader");
+const username = document.getElementById("username");
+const saveBtn = document.getElementById("save-high-score")
+const endScore = document.getElementById("end-score");
+const recentScore = localStorage.getItem("recentScore");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const tableBody = document.getElementById("table-body");
 
 let availableQuestions = [];
 let currentQuestion = {};
@@ -38,7 +44,7 @@ fetch("db.json")
     startGame();
 });
 
-//--------------------------------------------------------------------------------  Game Play
+//--------------------------------------------------------------------------------  GAME PLAY
 
 function startGame () {
     availableQuestions = [...questions];
@@ -111,4 +117,57 @@ function updateCurrentScore(num) {
     score += num;
     currentScoreDisplay.innerText = `Score: ${score}`;
 }
+
+//-------------------------------------------------------------------------------- END GAME
+
+
+    //Display final score to user
+endScore.innerText = `Final Score: ${recentScore}`;
+
+    //Submit button disabled until name is entered
+username.addEventListener('keyup', () => {
+    saveBtn.disabled = !username.value;
+});
+
+
+//----------------------------------------------------------------- Save High Score
+
+saveHighScore = (event) => {
+
+        // Prevent form reload when save button clicked
+    event.preventDefault();
+
+        //Create key values for score
+    const score = {
+        score: recentScore,
+        name: username.value
+    };
+
+        //Add score to highscores array
+    highScores.push(score);
+
+        //Organize scores highest to lowest
+    highScores.sort((a,b) => b.score - a.score);
+
+        //Set max saved scores to 5
+    highScores.splice(5);
+
+        //Update & save highscores to local storage
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+
+        //Redirect to high scores page once submitted
+    return window.location.assign("high-scores.html");
+
+};
+
+//-------------------------------------------------------------------------------- HIGH SCORES
+
+tableBody.innerHTML = highScores.map(score =>
+    { return `
+    <tr>
+        <td>${score.name}</td>
+        <td>${score.score}</td>
+    </tr>`
+}).join("");
+
 
