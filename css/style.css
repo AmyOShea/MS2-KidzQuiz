@@ -29,9 +29,15 @@ a.navigation-btn, .ans-choice, .submit-btn {
     font-size: 2rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
+}
+
+a.navigation-btn, .ans-choice {
     min-width: 70%;
 }
 
+.ans-choice:focus {
+    color: rgb(98, 235, 98);
+}
 
 /*Hover effect only present on desktop, not mobile*/
 @media (pointer: fine) {
@@ -42,9 +48,6 @@ a.navigation-btn, .ans-choice, .submit-btn {
     }
 }
 
-.ans-choice:focus {
-    color: rgb(98, 235, 98);
-}
 
 /*------------------------------------------------ Home Page*/
 
