@@ -42,6 +42,10 @@ a.navigation-btn, .ans-choice, .submit-btn {
     }
 }
 
+.ans-choice:focus {
+    color: rgb(98, 235, 98);
+}
+
 /*------------------------------------------------ Home Page*/
 
 .green-board {
@@ -117,6 +121,7 @@ li {
 
 .btn.correct {
     background-color: green;
+    color: white;
 }
 
 .ans-choice {
@@ -125,6 +130,7 @@ li {
 
 .btn.incorrect {
     background-color: red;
+    color: white;
 }
 
 #game-to-home {

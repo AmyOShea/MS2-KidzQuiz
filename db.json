@@ -150,14 +150,14 @@
         "question": "What is the capital city of England?",
         "correct": 1,
         "ans1": "London",
-        "ans2": "Manchester",
-        "ans3": "Birmingham"
+        "ans2": "Cardiff",
+        "ans3": "Swindon"
     },
     {
         "question": "Who is Mickey Mouse's girlfriend?",
         "correct": 3,
         "ans1": "Mandy Mouse",
-        "ans2": "Molly Mouse",
+        "ans2": "Mollie Mouse",
         "ans3": "Minnie Mouse"
     },
     {
