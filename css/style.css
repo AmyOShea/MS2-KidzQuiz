@@ -32,13 +32,15 @@ a.navigation-btn, .ans-choice, .submit-btn {
     min-width: 70%;
 }
 
-a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover {
-    color: white;
-    background-color: rgb(98, 235, 98);
-    border: 3px solid white;
+
+/*Hover effect only present on desktop, not mobile*/
+@media (pointer: fine) {
+    a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover {
+        color: white;
+        background-color: rgb(98, 235, 98);
+        border: 3px solid white;
+    }
 }
-
-
 
 /*------------------------------------------------ Home Page*/
 
