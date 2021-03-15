@@ -11,7 +11,7 @@ const currentScoreDisplay = document.getElementById("current-score");
 const game = document.getElementById("game-play");
 const loader = document.getElementById("loader");
 const username = document.getElementById("username");
-const saveBtn = document.getElementById("save-high-score")
+const saveBtn = document.getElementById("save-high-score");
 const endScore = document.getElementById("end-score");
 const recentScore = localStorage.getItem("recentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
@@ -22,6 +22,8 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = [];
+    //**ERROR FIX**
+let saveHighScore;
 
 //-------------------------------------------------------------------------------- Questions
 
@@ -35,10 +37,12 @@ fetch("db.json")
         //Setting pulled data into questions array
 .then(loadedQuesitons => {
     questions = loadedQuesitons;
+    
         // Once questions have loaded, loader hidden and game shows
-    loader.classList.add("hidden");
-    game.classList.remove("hidden");
-
+    if (loader !== null && game !==null) {
+        loader.classList.add("hidden");
+        game.classList.remove("hidden");
+    }
 
         //Game starts AFTER questions are loaded
     startGame();
@@ -51,9 +55,8 @@ function startGame () {
     getNewQuestion();
 }
 
-
 function getNewQuestion() {
-        //Setting maximum questions to 3(will change to 10 later in development)
+        //Setting maximum questions to 10
     if (questionCounter >= maxQuestions) {
 
         //Save most recent score to local storage
@@ -64,13 +67,17 @@ function getNewQuestion() {
     }
         //Question counter for HUD incrementing 
     questionCounter++;
-    questionCounterDisplay.innerText = `Question ${questionCounter}`;
+    if (questionCounterDisplay !== null) {
+        questionCounterDisplay.innerText = `Question ${questionCounter}`;
+    }
 
 
         //Randomizes order of questions and display them in game
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    if (question !== null) {
+        question.innerText = currentQuestion.question;
+    }
 
         //Display all answer choices in game
     choices.forEach( choice => {
@@ -120,15 +127,19 @@ function updateCurrentScore(num) {
 
 //-------------------------------------------------------------------------------- END GAME
 
-
     //Display final score to user
-endScore.innerText = `Final Score: ${recentScore}`;
+
+if (endScore !== null) {
+    endScore.innerText = `Final Score: ${recentScore}`;
+}
 
     //Submit button disabled until name is entered
-username.addEventListener('keyup', () => {
-    saveBtn.disabled = !username.value;
-});
 
+    if (username !== null) {
+    username.addEventListener('keyup', () => {
+        saveBtn.disabled = !username.value;
+    });
+}
 
 //----------------------------------------------------------------- Save High Score
 
@@ -162,12 +173,12 @@ saveHighScore = (event) => {
 
 //-------------------------------------------------------------------------------- HIGH SCORES
 
-tableBody.innerHTML = highScores.map(score =>
-    { return `
-    <tr>
-        <td>${score.name}</td>
-        <td>${score.score}</td>
-    </tr>`
-}).join("");
-
-
+if (tableBody !== null) {
+    tableBody.innerHTML = highScores.map(score =>
+        { return `
+        <tr>
+            <td>${score.name}</td>
+            <td>${score.score}</td>
+        </tr>`;
+    }).join("");
+}
