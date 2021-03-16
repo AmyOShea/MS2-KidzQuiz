@@ -35,9 +35,14 @@ a.navigation-btn, .ans-choice {
     min-width: 70%;
 }
 
-.ans-choice:focus {
+.ans-choice:focus, a.navigation-btn:focus, .submit-btn:focus {
     color: rgb(98, 235, 98);
 }
+
+.btn:hover {
+    color: rgb(98, 235, 98);
+}
+
 
 /*Hover effect only present on desktop, not mobile*/
 @media (pointer: fine) {
