@@ -245,3 +245,14 @@ input, .submit-btn {
     max-width: 40vw;
     margin-bottom: 3rem;
 }
+
+/*------------------------------------------------ Error Page*/
+
+#error-text {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+#error-nav {
+    margin-top: 20px;
+}
