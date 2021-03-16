@@ -16,6 +16,9 @@ const endScore = document.getElementById("end-score");
 const recentScore = localStorage.getItem("recentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const tableBody = document.getElementById("table-body");
+const correctAudio = new Audio("assets/audio/right-sound.m4a");
+const incorrectAudio = new Audio("assets/audio/wrong-sound.m4a");
+const endAudio = new Audio("assets/audio/end-game-sound.m4a");
 
 let availableQuestions = [];
 let currentQuestion = {};
@@ -106,6 +109,9 @@ choices.forEach(choice => {
 
         if (selectedChoiceClass === "correct") {
             updateCurrentScore(correctAnsBonus);
+            correctAudio.play();
+        } else {
+            incorrectAudio.play();
         }
 
         //Add correct/incorrect class to user choice
