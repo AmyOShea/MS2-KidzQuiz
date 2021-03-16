@@ -148,6 +148,25 @@ li {
     border: 3px solid rgb(77, 187, 77);
 }
 
+
+
+#audio-btn {
+    background-color: rgb(98, 235, 98);
+    color: white;
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+
+    
+}
+
+
+
+
 /*------------------------------------------------ Loader*/
 
 #loader, #error {
