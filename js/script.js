@@ -18,7 +18,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const tableBody = document.getElementById("table-body");
 const correctAudio = new Audio("assets/audio/right-sound.m4a");
 const incorrectAudio = new Audio("assets/audio/wrong-sound.m4a");
-const endAudio = new Audio("assets/audio/end-game-sound.m4a");
+const audioBtn = document.getElementById("audio-btn");
 
 let availableQuestions = [];
 let currentQuestion = {};
@@ -52,6 +52,16 @@ fetch("db.json")
 });
 
 //--------------------------------------------------------------------------------  GAME PLAY
+
+let music = "off";
+
+function toggleAudio() {
+    if(music === "off") {
+        music = "on";
+    } else {
+        music = "off";
+    }
+};
 
 function startGame () {
     availableQuestions = [...questions];
@@ -107,12 +117,14 @@ choices.forEach(choice => {
         //Defining correct/incorrect to user choice  
         const selectedChoiceClass = selectedAnswer == currentQuestion.correct ? "correct" : "incorrect";
 
-        if (selectedChoiceClass === "correct") {
+        if (selectedChoiceClass === "correct" && music === "on") {
             updateCurrentScore(correctAnsBonus);
             correctAudio.play();
-        } else {
+        } else if (selectedChoiceClass === "correct" && music === "off") {
+            updateCurrentScore(correctAnsBonus);
+        } else if (selectedChoiceClass === "incorrect" && music === "on") {
             incorrectAudio.play();
-        }
+        };
 
         //Add correct/incorrect class to user choice
         selectedChoice.classList.add(selectedChoiceClass);
@@ -174,8 +186,7 @@ saveHighScore = (event) => {
 
         //Redirect to high scores page once submitted
     return window.location.assign("high-scores.html");
-
-};
+    };
 
 //-------------------------------------------------------------------------------- HIGH SCORES
 
