@@ -69,11 +69,11 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) user to design initial mock ups, green board image and site background. 
 + [Bootstrap](https://getbootstrap.com/) used for responsive design.
 + [Font Awesome](https://fontawesome.com/) used for icons.
-+ [Google Fonts](https://fonts.google.com/) used to import fonts.
 + [GitHub](https://github.com/) used to host repository.
 + [GitPod](https://www.gitpod.io/) used to develop project and orgainse version control.
-+ [GitHub](https://pages.github.com/) Pages used to deploy the site.
++ [GitHub Pages](https://pages.github.com/) Pages used to deploy the site.
 + [Balsamiq](https://balsamiq.com/) used to create wireframes.
++ [Autoprefixer]("https://autoprefixer.github.io/") used to make CSS cross-browser compatible.
 + [Transfonter](https://transfonter.org/) used to convert font from .tff to .woff and .woff2.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 + [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.

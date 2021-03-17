@@ -27,7 +27,8 @@ a.navigation-btn, .ans-choice, .submit-btn {
     color: rgb(98, 235, 98);
     border: 3px solid rgb(98, 235, 98);
     font-size: 2rem;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     margin-bottom: 10px;
 }
 
@@ -57,6 +58,7 @@ a.navigation-btn, .ans-choice {
 /*------------------------------------------------ Home Page*/
 
 .green-board {
+    background-image: -o-linear-gradient(300deg, rgb(116, 165, 44), rgb(64, 100, 43));
     background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43));
     text-align: center;
     margin-bottom: 50px;
@@ -64,9 +66,11 @@ a.navigation-btn, .ans-choice {
     padding-bottom: 30px;
     border: 12px solid rgb(92, 58, 8);
     border-radius: 10px;
-    box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.6);
+            box-shadow: inset 10px 10px 12px rgba(0, 0, 0, 0.6);
     background-image: linear-gradient(150deg, rgb(116, 165, 44), rgb(64, 100, 43));
 }
+
 .inner-info {
     margin-top: 10px;
     margin-bottom: 20px;    
@@ -149,7 +153,6 @@ li {
 }
 
 
-
 #audio-btn {
     background-color: rgb(98, 235, 98);
     color: white;
@@ -159,12 +162,13 @@ li {
     width: 50px;
     margin-bottom: 15px;
     font-size: 1.7rem;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
-
-    
+    -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
 
-
+#audio-btn:focus {
+    outline: none;
+}
 
 
 /*------------------------------------------------ Loader*/
@@ -187,15 +191,29 @@ img.apple {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    animation: float 3s ease-in-out infinite;
+    -webkit-animation: float 3s ease-in-out infinite;
+            animation: float 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes float {
+	0%, 100% {
+		-webkit-transform: translatey(0px);
+		        transform: translatey(0px);
+    }
+	50% {
+		-webkit-transform: translatey(-40px);
+		        transform: translatey(-40px);
+    }
 }
 
 @keyframes float {
 	0%, 100% {
-		transform: translatey(0px);
+		-webkit-transform: translatey(0px);
+		        transform: translatey(0px);
     }
 	50% {
-		transform: translatey(-40px);
+		-webkit-transform: translatey(-40px);
+		        transform: translatey(-40px);
     }
 }
 
@@ -238,7 +256,28 @@ input {
 input, .submit-btn {
   padding: 0;
   margin: 0 .3rem 0 .3rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+
+::-moz-placeholder {
+    color: white;
+}
+
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+
+::-ms-input-placeholder {
+    color: white;
 }
 
 
