@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-family: chawp;
     src: url("../css/fonts/CHAWP.woff2") format("woff2"),
@@ -47,7 +54,7 @@ a.navigation-btn, .ans-choice {
 
 /*Hover effect only present on desktop, not mobile*/
 @media (pointer: fine) {
-    a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover {
+    a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover, #game-to-home:hover {
         color: white;
         background-color: rgb(98, 235, 98);
         border: 3px solid white;
@@ -158,10 +165,11 @@ li {
     color: white;
     border: 3px solid white;
     border-radius: 50%;
+    font-size: 1.7rem;
     height: 50px;
     width: 50px;
+    padding: 0;
     margin-bottom: 15px;
-    font-size: 1.7rem;
     -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
             box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
