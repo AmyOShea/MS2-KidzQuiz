@@ -172,12 +172,13 @@ li {
     margin-bottom: 15px;
     -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
             box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    -webkit-appearance: none;
 }
 
 #audio-btn:focus {
     outline: none;
 }
-
+  
 
 /*------------------------------------------------ Loader*/
 
