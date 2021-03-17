@@ -9,14 +9,14 @@
     font-family: chawp;
     src: url("../css/fonts/CHAWP.woff2") format("woff2"),
         url("../css/fonts/CHAWP.woff") format("woff"),
-            url("../css/fonts/CHAWP.ttf") format("truetype");
+        url("../css/fonts/CHAWP.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     font-family: "chawp", sans-serif;
-    background-image: url("../assets/images/game-background.webp");
+    background-image: url("../images/game-background.webp");
     color: #fff;
     margin: 0px;
     padding: 0px;
@@ -253,13 +253,13 @@ form {
 }
 
 input {
-
     font-size: 1.2rem;
     border: 3px solid #fff;
     border-radius: 5px;
     background-color: transparent;
     color: #fff;
 }
+
 
 input, .submit-btn {
   padding: 0;
