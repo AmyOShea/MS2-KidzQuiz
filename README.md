@@ -79,50 +79,16 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.
 + [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.
 # Testing
+
 ## Validator Testing
 At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
 + [HTML](https://validator.w3.org/) 
 + [CSS](https://jigsaw.w3.org/css-validator/)
 + [JavaScript](https://jshint.com/)
 
-## Testing User Stories from (UX) Section
+## Other Testing
 
-## Bugs & Fixes
-1. After the first run through the JS Validator, I recieved the following error: 
-
-![autofill bug](assets/images/README/testing/es6-bug.PNG)  
-
-  After a bit of research I learned that if you declare that you're using ES6 at the top of your JavaScript file, this error will be removed. I added the following line at the top of my JavaScript file:  
-
-![autofill bug](assets/images/README/testing/es6-bug-fix.PNG)
-
----
-2. Initially I wanted the JavaScript to all be on one page. However, because there were seperate HTML pages that were being used, there were elements that JS was trying to access that didn't exist on certain pages: 
-
-![autofill bug](assets/images/README/testing/HTML-page-bug.PNG)
-
-As a result, I seperated the JavaScript into seperate files.
-
-However, after a bit of research, I learned that I could use an 'if statement' to decide if that element existed and, if not, ignore the JavaScript function. 
-
----
-
-3. Afer another run through the JS validator, I recieved the following error: 
-
-![autofill bug](assets/images/README/testing/var-not-declared-01.PNG)
-
-I tried a few fixes (including declaring it as a vairable on that line) but each fix seemed to cause more problems. As a solution, I added saveHighScores to my variables section but didn't give it any value: 
-
-![autofill bug](assets/images/README/testing/var-not-declared-02.PNG)  
-
----
-
-## Known Bugs
-+ When the user is given the option to input their name to the leaderboard, the auto fill feature is createing a styling issue. When a user manually types their name into the input area, the styling remains consistant with the rest of the page. However, when an auto fill option is clicked, the styling changes (as below):
-
-![autofill bug](assets/images/README/testing/autofill.PNG)
-
-I've tried to find a fix for this but according to [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill), there are set stylings that are incredibly difficult to override. I'm happy enough to let this go as, in the grand scheme of the project, it is not a huge deal. 
+Due to the size of the testing section, I have created a seperate document for it. You can find  it [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/testing.md). 
 
 # Deployment
 
