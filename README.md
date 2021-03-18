@@ -31,10 +31,12 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 ### Overall Feel
 The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated due to the fact that classrooms don't use greenboards or chalk any more, I believe that the imagery is instantly recognisable. 
 ### Colour Scheme
-I'm sticking to a simple colour pallete to cause little to no distraction for a child to be able to focus. 
+I'm sticking to a simple colour pallette to cause little to no distraction for a child to be able to focus. 
 ### Typography
-To go with the school theme, I wanted a typface that would emulate the look of chalk on a board.
-I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) becuse it was open source and it fit the school theme. I was then able to convert the .tff file to both .woff and .woff2 files for cross browser compatibility.
+To go with the school theme, I wanted a typeface that would emulate the look of chalk on a board.
+I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) because it was open source and it fit the school theme. I was then able to convert the .tff file to both .woff and .woff2 files for cross browser compatibility.
+### Sound
+The plan for sound was to keep it as simple as possible - as with the colour scheme, I want to keep the possible distractions to a minimum doe to the young age of the target audience. The only sound is based on the user getting an answer right or wrong. 
 ## Wireframes & Design
 ### Wireframes
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
@@ -58,7 +60,7 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + Ability to enter name at the end of the game to add to a local leader board.
 ## Possible Future Features
 + This site could be expanded include different questions based on age.
-+ There could be an option to schoose a specific subject to test knowledge on rather than a random selection. 
++ There could be an option to choose a specific subject to test knowledge on rather than a random selection. 
 + Global leaderboard rather than local. 
 # Technologies Used
 ## Languages Used
@@ -70,11 +72,12 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [Bootstrap](https://getbootstrap.com/) used for responsive design.
 + [Font Awesome](https://fontawesome.com/) used for icons.
 + [GitHub](https://github.com/) used to host repository.
-+ [GitPod](https://www.gitpod.io/) used to develop project and orgainse version control.
++ [GitPod](https://www.gitpod.io/) used to develop project and organise version control.
 + [GitHub Pages](https://pages.github.com/) Pages used to deploy the site.
 + [Balsamiq](https://balsamiq.com/) used to create wireframes.
 + [Autoprefixer]("https://autoprefixer.github.io/") used to make CSS cross-browser compatible.
 + [Transfonter](https://transfonter.org/) used to convert font from .tff to .woff and .woff2.
++ [iOS Garage Band](https://apps.apple.com/ie/app/garageband/id408709785) used to create audio.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 + [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.
 + [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.
@@ -88,7 +91,7 @@ At the completion or heavy editing of sections, I used the following to check my
 
 ## Other Testing
 
-Due to the size of the testing section, I have created a seperate document for it. You can find  it [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/testing.md). 
+Due to the size of the testing section, I have created a separate document for it. You can find  it [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/testing.md). 
 
 # Deployment
 
@@ -101,8 +104,8 @@ This site was deployed through GitHub Pages using the following steps:
 + Locate GitHub Pages options towards the bottom of the page.
 + In 'Source' dropdown, select 'Master' from the branch options.
 + Click the save button.
-+ The site is now published though it may not be accesible straight away.
-+ The site URL will be visable on the green bar under the section header. This will remain there permanently and you can refer back to it at any time.
++ The site is now published though it may not be accessible straight away.
++ The site URL will be visible on the green bar under the section header. This will remain there permanently and you can refer back to it at any time.
 
 ## Cloning Project
 
