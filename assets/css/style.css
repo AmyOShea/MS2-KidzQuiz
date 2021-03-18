@@ -16,6 +16,7 @@
 
 body {
     font-family: "chawp", sans-serif;
+    background-color: rgb(241, 241, 64);
     background-image: url("../images/game-background.webp");
     color: #fff;
     margin: 0px;

@@ -27,7 +27,7 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 + I want the site to be easy to navigate through so that my child does not require assistance with the UI. 
 + I want a variety of subjects covered so that I can identify any gaps in my child's knowledge. 
 
-## Design
+# Design
 ### Overall Feel
 The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated due to the fact that classrooms don't use greenboards or chalk any more, I believe that the imagery is instantly recognisable. 
 ### Colour Scheme
@@ -88,6 +88,27 @@ At the completion or heavy editing of sections, I used the following to check my
 + [HTML](https://validator.w3.org/) 
 + [CSS](https://jigsaw.w3.org/css-validator/)
 + [JavaScript](https://jshint.com/)
+
+## Lighthouse Testing
+
+I used Chromes Lighthouse tools to test site performance. I made sure to check both desktop and mobile performances. Below are the screenshots from both tests:
+### Lighouse Desktop
+![Lighouse Desktop Results](assets/images/README/testing/lighthouse-desktop.PNG)
+
+### Lighthouse Mobile
+![Lighthouse Mobile](assets/images/README/testing/lighthouse-mobile.PNG)
+
+Even though it's not a perfect score on mobile, I'm very happy with the outcome. There's a slight reduciton in the 'Performance' score but this seems fractional in the grand scheme of the project. 
+
+## PowerMapper Compatibility
+
+I used the PowerMapper Compatibility feature to test the site on browsers that I don't have access to. 
+
+![Lighthouse Mobile](assets/images/README/testing/powermapper-test.PNG)
+
+Internet Explorer was the big fail on this test. 
+The issue comes from using a WebP images as the background and this file type is not supported on IE. However, this is the optimal file type for all other browsers. And as IE has basically been deemed obsolete, I'm going to continue using the WebP image. As a concession, I have added a background colour to the page to emulate the look of the site (it's proably best practive to have a backup colour in place just in case the image doesn't load).
+
 
 ## Other Testing
 
