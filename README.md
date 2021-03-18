@@ -8,7 +8,36 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 
 ![KidzQuiz](assets/images/README/responsinator-mock.PNG)
 
-# User Experience
+# Contents
++ [User Experience](#user-experience-(ux))
+  + [User Stories](#user-stories)
+  + [Design](#design)
+  + [Wireframes and Initial Design](#wireframes-and-initial-design)
+
+
+
++ [Features](#features)
+  + [Current Features](#current-features)
+  + [Possible Future Features](#possible-future-features)
+
++ [Technologies Used](#technologies-used)
+  + [Languages Used](#languages-used)
+  + [Frameworks Libraries & Programmes Used](#frameworks-libraries-and-programmes-used)
+
++ [Testing](#testing)
+
++ [Deployment](#deployment)
+
++ [Credits](#credits)
+  + [Content](#content)
+  + [Media](#media)
+  + [Acknowledgements](#acknowledgements)
+
+
+
+
+---
+# User Experience (UX)
 
 ## User Stories
 
@@ -27,7 +56,7 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 + I want the site to be easy to navigate through so that my child does not require assistance with the UI. 
 + I want a variety of subjects covered so that I can identify any gaps in my child's knowledge. 
 
-# Design
+## Design
 ### Overall Feel
 The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated due to the fact that classrooms don't use greenboards or chalk any more, I believe that the imagery is instantly recognisable. 
 ### Colour Scheme
@@ -37,7 +66,7 @@ To go with the school theme, I wanted a typeface that would emulate the look of 
 I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) because it was open source and it fit the school theme. I was then able to convert the .tff file to both .woff and .woff2 files for cross browser compatibility.
 ### Sound
 The plan for sound was to keep it as simple as possible - as with the colour scheme, I want to keep the possible distractions to a minimum doe to the young age of the target audience. The only sound is based on the user getting an answer right or wrong. 
-## Wireframes & Design
+## Wireframes and Initial Design
 ### Wireframes
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + **Homepage** wireframes [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/01-Home.png)
@@ -67,7 +96,7 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [HTML5](https://en.wikipedia.org/wiki/HTML5)
 + [CSS3](https://en.wikipedia.org/wiki/CSS)
 + [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-## Frameworks, Libraries & Programmes Used
+## Frameworks Libraries and Programmes Used
 + [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) user to design initial mock ups, green board image and site background. 
 + [Bootstrap](https://getbootstrap.com/) used for responsive design.
 + [Font Awesome](https://fontawesome.com/) used for icons.
