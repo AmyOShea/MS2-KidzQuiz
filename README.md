@@ -1,5 +1,4 @@
 # Kidz Quiz
-
 Kidz Quiz is an interactive website designed for children to test their knowledge. With COVID-19 meaning schools are shut, parents are having to find fun and interactive ways to teach their children while at home. A great way to do this is through game play. 
 
 At this point in development, this will be aimed at children aged 7-8 yrs old and the questions will consist of Math, English, Geography, Science, Animals and General Knowledge. 
@@ -7,40 +6,39 @@ At this point in development, this will be aimed at children aged 7-8 yrs old an
 You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 
 ![KidzQuiz](assets/images/README/responsinator-mock.PNG)
-
 # Contents
-+ [User Experience](#user-experience-(ux))
++ ### [User Experience](#user-experience-(ux))
   + [User Stories](#user-stories)
   + [Design](#design)
+    + [Overall Feel](#overall-feel)
+    + [Colour Scheme](#colour-scheme)
+    + [Typography](#typography)
+    + [Sound](#sound)
   + [Wireframes and Initial Design](#wireframes-and-initial-design)
-
-
-
-+ [Features](#features)
+    + [Wireframes](#wireframes)
+    + [Design Mock Up](#design-mock-up)
++ ### [Features](#features)
   + [Current Features](#current-features)
   + [Possible Future Features](#possible-future-features)
-
-+ [Technologies Used](#technologies-used)
++ ### [Technologies Used](#technologies-used)
   + [Languages Used](#languages-used)
   + [Frameworks Libraries & Programmes Used](#frameworks-libraries-and-programmes-used)
-
-+ [Testing](#testing)
-
-+ [Deployment](#deployment)
-
-+ [Credits](#credits)
++ ### [Testing](#testing)
+  + [Validator Testing](#validator-testing) 
+  + [Lighthouse Testing](#lighthouse-testing)
+  + [PowerMapper Compatibility](#powerMapper-compatibility)
+  + [Other Testing](#other-testing)
++ ### [Deployment](#deployment)
+  + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
+  + [Cloning Project](#cloning-project)
++ ### [Credits](#credits)
   + [Content](#content)
   + [Media](#media)
   + [Acknowledgements](#acknowledgements)
-
-
-
-
+---
 ---
 # User Experience (UX)
-
 ## User Stories
-
 #### As a child user: 
 + I want to be able to easily navigate through the site.
 + I want to be able to play a fully functioning game.
@@ -55,7 +53,6 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 + I want my child to learn some new information. 
 + I want the site to be easy to navigate through so that my child does not require assistance with the UI. 
 + I want a variety of subjects covered so that I can identify any gaps in my child's knowledge. 
-
 ## Design
 ### Overall Feel
 The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated due to the fact that classrooms don't use greenboards or chalk any more, I believe that the imagery is instantly recognisable. 
@@ -74,14 +71,14 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + **Game Play** wireframes [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/03%20-%20Game%20Play.png)
 + **End Game** wireframes [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/04%20-%20EndGame.png)
 + **Top Scores** wireframes [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/05%20-%20Scores.png)
-
 ### Design Mock Up
 + **Homepage** design [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/Mock%20-%2001%20Home.PNG)
 + **Rules** design [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/Mock%20-%2002%20Rules.PNG)
 + **Game Play** design [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/Mock%20-%2003%20Game.PNG)
 + **End Game** design [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/Mock%20-%2004%20End%20Game.PNG)
 + **Top Scores** design [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/assets/images/README/Mock%20-%2005%20Scores.PNG)
-
+---
+---
 # Features
 ## Current Features
 + Randomised, age-appropriate questions covering a range of subjects.
@@ -91,6 +88,8 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + This site could be expanded include different questions based on age.
 + There could be an option to choose a specific subject to test knowledge on rather than a random selection. 
 + Global leaderboard rather than local. 
+---
+---
 # Technologies Used
 ## Languages Used
 + [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -110,44 +109,37 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 + [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.
 + [Responsinator](https://www.responsinator.com/) used to check site was responsive on different screen sizes.
+---
+---
 # Testing
-
 ## Validator Testing
 At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
 + [HTML](https://validator.w3.org/) 
 + [CSS](https://jigsaw.w3.org/css-validator/)
 + [JavaScript](https://jshint.com/)
-
 ## Lighthouse Testing
-
 I used Chromes Lighthouse tools to test site performance. I made sure to check both desktop and mobile performances. Below are the screenshots from both tests:
 ### Lighouse Desktop
 ![Lighouse Desktop Results](assets/images/README/testing/lighthouse-desktop.PNG)
-
 ### Lighthouse Mobile
 ![Lighthouse Mobile](assets/images/README/testing/lighthouse-mobile.PNG)
 
 Even though it's not a perfect score on mobile, I'm very happy with the outcome. There's a slight reduciton in the 'Performance' score but this seems fractional in the grand scheme of the project. 
-
 ## PowerMapper Compatibility
-
 I used the PowerMapper Compatibility feature to test the site on browsers that I don't have access to. 
 
 ![Lighthouse Mobile](assets/images/README/testing/powermapper-test.PNG)
 
 Internet Explorer was the big fail on this test. 
 The issue comes from using a WebP images as the background and this file type is not supported on IE. However, this is the optimal file type for all other browsers. And as IE has basically been deemed obsolete, I'm going to continue using the WebP image. As a concession, I have added a background colour to the page to emulate the look of the site (it's proably best practive to have a backup colour in place just in case the image doesn't load).
-
-
 ## Other Testing
-
 Due to the size of the testing section, I have created a separate document for it. You can find  it [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/testing.md). 
 
+---
+---
 # Deployment
-
 ## Deployment through GitHub Pages
 This site was deployed through GitHub Pages using the following steps:
-
 + Log into GitHub.
 + Locate the repository.
 + Locate the settings option along the options bar.
@@ -156,9 +148,7 @@ This site was deployed through GitHub Pages using the following steps:
 + Click the save button.
 + The site is now published though it may not be accessible straight away.
 + The site URL will be visible on the green bar under the section header. This will remain there permanently and you can refer back to it at any time.
-
 ## Cloning Project
-
 + Log into GitHub.
 + Locate the repository.
 + Click the 'Code' dropdown above the file list.
@@ -168,21 +158,22 @@ This site was deployed through GitHub Pages using the following steps:
 + Type git clone in the CLI and then paste the URL you copied earlier. This is what it should look like:
   + $ git clone https://github.com/AmyOShea/MS2-KidzQuiz.git
 + Press Enter to create your local clone.
-
-
-
-
-
-
-
-
-
-
+---
+---
 # Credits
+## Code
++ The techniques I learned in [James Q Quick's tutorial](https://youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) was invaluable in creating the game functionality.
++ Likewise, for adding sound I found [Cukmekerb's Coding Class tutorial](https://www.youtube.com/watch?v=p4OHVJxd2FI&t=149s) very helpful in learning basic Javascript Audio basics that I could incorperate into my own project. 
 ## Content
 Two resources were used to compile most of the questions:
 + [IXL Personalised Learning](https://ie.ixl.com/).
 + [The Irish Mirror Online Quiz](https://www.irishmirror.ie/news/irish-news/70-kids-general-knowledge-quiz-23382217).
 All other questions and content were written by Amy O'Shea (website creator).
 ## Media
-All images have been created by Amy O'Shea (website creator).
++ All images have been created by Amy O'Shea (website creator).
++ All sounds have been created by Amy O'Shea (website creator).
+## Acknowledgements
++ A massive shoutout to my cousins and their children for being testers that hit the target audience age. 
++ To all of my friends who tested the game in it's earliest stages and sent me all issues that they came across, that help was invaluable. 
++ A big thank you to the Slack Community for their endless support and having most of my questrions answered before I even knew I had them! And a special mention to [Simen Daehlin](https://app.slack.com/client/T0L30B202/CGWQJQKC5/user_profile/U4MVA9YQP) who I think has answered just about every question that has come up on there!
++ And my mentor Antonio Rodriguez for going through the project step by step and teaching me how to approach what seemed like a behemoth task. 
