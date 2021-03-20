@@ -113,8 +113,18 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 ## Validator Testing
 At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
 + [HTML](https://validator.w3.org/) 
+  + All pages came back with no errors.
 + [CSS](https://jigsaw.w3.org/css-validator/)
+  + CSS came back with no errors. 
+  + CSS did display warnings but they're all in relation to vendor prefixes. 
 + [JavaScript](https://jshint.com/)
+
+  + The only issue coming back from JS Validator is an unused function: 
+
+    ![JS Validator Results](assets/images/README/testing/js-validator-01.PNG)
+  + However, this function is called in game.html:  
+
+    ![Lighthouse Desktop Results](assets/images/README/testing/js-validator-02.PNG)
 ## Lighthouse Testing
 I used Chromes Lighthouse tools to test site performance. I made sure to check both desktop and mobile performances. Below are the screenshots from both tests:
 ### Lighthouse Desktop
@@ -146,19 +156,24 @@ This site was deployed through GitHub Pages using the following steps:
 + Click the save button.
 + The site is now published though it may not be accessible straight away.
 + The site URL will be visible on the green bar under the section header. This will remain there permanently and you can refer back to it at any time.
-## Cloning Project
+## Forking the Repository
++ Log in to GitHub and locate the GitHub Repository
++ At the top of the Repository just above the "Settings" Button on the menu, locate the "Fork" Button.
++ You will have a copy of the original repository in your GitHub account.
++ You will now be able to make changes to the new version and keep the original safe. 
+## Making a Local Clone
 + Log into GitHub.
 + Locate the repository.
 + Click the 'Code' dropdown above the file list.
 + Copy the URL for the repository.
 + Open Git Bash on your device.
 + Change the current working directory to the location where you want the cloned directory.
-+ Type git clone in the CLI and then paste the URL you copied earlier. This is what it should look like:
-  + $ git clone https://github.com/AmyOShea/MS2-KidzQuiz.git
++ Type ```git clone``` in the CLI and then paste the URL you copied earlier. This is what it should look like:
+  + ```$ git clone https://github.com/AmyOShea/MS2-KidzQuiz.git```
 + Press Enter to create your local clone.
 ---
 ---
-# Creditss
+# Credits
 ## Code
 + The techniques I learned in [James Q Quick's tutorial](https://youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) was invaluable in creating the game functionality.
 + Likewise, for adding sound I found [Cukmekerb's Coding Class tutorial](https://www.youtube.com/watch?v=p4OHVJxd2FI&t=149s) very helpful in learning basic Javascript Audio basics that I could incorperate into my own project. 
