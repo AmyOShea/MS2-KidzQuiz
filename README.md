@@ -7,7 +7,7 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 
 ![KidzQuiz](assets/images/README/responsinator-mock.PNG)
 # Contents
-+ [User Experience](#user-experience-(ux))
++ [User Experience](#user-experience)
   + [User Stories](#user-stories)
   + [Design](#design)
     + [Overall Feel](#overall-feel)
@@ -38,7 +38,7 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
   + [Acknowledgements](#acknowledgements)
 ---
 ---
-# User Experience (UX)
+# User Experience
 ## User Stories
 #### As a child user: 
 + I want to be able to easily navigate through the site.
@@ -108,7 +108,7 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 + [GitPod](https://www.gitpod.io/) used to develop project and organise version control.
 + [GitHub Pages](https://pages.github.com/) Pages used to deploy the site.
 + [Balsamiq](https://balsamiq.com/) used to create wireframes.
-+ [Autoprefixer]("https://autoprefixer.github.io/") used to make CSS cross-browser compatible.
++ [Autoprefixer](https://autoprefixer.github.io/) used to make CSS cross-browser compatible.
 + [Transfonter](https://transfonter.org/) used to convert font from .tff to .woff and .woff2.
 + [iOS Garage Band](https://apps.apple.com/ie/app/garageband/id408709785) used to create audio.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
