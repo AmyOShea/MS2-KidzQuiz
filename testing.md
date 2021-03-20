@@ -2,8 +2,11 @@
 ## Contents
 + [Testing From User Stories](#testing-from-user-stories)
 + [Manually Testing Functionality](#manually-testing-functionality)
++ [Responsive Testing](#responsive-testing)
 + [Bugs and Fixes](#bugs-and-fixes)
 + [Known Bugs](#known-bugs)
+---
+---
 ## Testing From User Stories
 I tested the user stories on all devices.
 ### As a child user: 
@@ -61,6 +64,7 @@ I tested the user stories on all devices.
 
 ![Question pool](assets/images/README/testing/user-story-testing/09-question-pool.png) 
 ---
+---
 ## Manually Testing Functionality
 ### Navigation Buttons
 + Went to each page individually and clicked each button to make sure that they navigate to the correct place.
@@ -93,6 +97,37 @@ I tested the user stories on all devices.
 + Shut down device and restarted to make ensure that scores were being saved in local storage. 
 ### 404 Error Page
 + Manually typed in a html page that didn't exist in the game to check redirect to error page. 
+---
+---
+## Responsive Testing
+Through devices that I have at home/readily available to me, I was able to continuously test on:
+### Phone:
++ Samsung Galaxy S9
+  + Google Chrome
+  + Samsung Internet
++ Huawei Y7
+  + Google Chrome
++ iPhone 6
+  + Safari
+### Tablet
++ iPad Mini 7.9"
+  + Safari
++ iPad 9.7"
+  + Safari
++ iPad 11" Pro
+  + Safari
+### Computer
+* Avita Pura 14" Laptop
+  * Google Chrome
+  * Microsoft Edge
+  * Opera
+  * Mozilla Firefox
+* Lenovo 15" IdeaPad
+  * Microsoft Edge
+  * Google Chrome
+### Responsinator
++ When there were devices/browsers that I didn't have access to, I used [Responsinator](https://www.responsinator.com/) to make sure that the site was responsive.
+---
 ---
 ## Bugs and Fixes
 ### 1. ES6 Issue
