@@ -79,9 +79,14 @@ All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
 ---
 # Features
 ## Current Features
++ All pages fully reponsive on all screen sizes.
++ Fully functioning navigation links on all pages for ease of access through site.
++ Optional audio played through game. 
 + Randomised, age-appropriate questions covering a range of subjects.
 + Continuous score updates as the game progresses. 
++ Continuous question number updates as the game progresses. 
 + Ability to enter name at the end of the game to add to a local leader board.
++ Local leader board accessible after site is closed and reopened.
 ## Possible Future Features
 + This site could be expanded include different questions based on age.
 + There could be an option to choose a specific subject to test knowledge on rather than a random selection. 
