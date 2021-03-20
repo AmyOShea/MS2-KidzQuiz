@@ -158,10 +158,12 @@ This site was deployed through GitHub Pages using the following steps:
 + Press Enter to create your local clone.
 ---
 ---
-# Credits
+# Creditss
 ## Code
 + The techniques I learned in [James Q Quick's tutorial](https://youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) was invaluable in creating the game functionality.
 + Likewise, for adding sound I found [Cukmekerb's Coding Class tutorial](https://www.youtube.com/watch?v=p4OHVJxd2FI&t=149s) very helpful in learning basic Javascript Audio basics that I could incorperate into my own project. 
++ [W3Schools](https://www.w3schools.com/) helped develop a better understanding of [arrow functions](https://www.w3schools.com/js/js_arrow_function.asp) and the [fetch method](https://www.w3schools.com/js/js_api_fetch.asp).
++ [MDN Web Docs](https://developer.mozilla.org/en-US/) helped develop a better understanding of [JSON parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 ## Content
 Two resources were used to compile most of the questions:
 + [IXL Personalised Learning](https://ie.ixl.com/).
