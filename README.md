@@ -7,7 +7,7 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 
 ![KidzQuiz](assets/images/README/responsinator-mock.PNG)
 # Contents
-+ ### [User Experience](#user-experience-(ux))
++ [User Experience](#user-experience-(ux))
   + [User Stories](#user-stories)
   + [Design](#design)
     + [Overall Feel](#overall-feel)
@@ -17,21 +17,21 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
   + [Wireframes and Initial Design](#wireframes-and-initial-design)
     + [Wireframes](#wireframes)
     + [Design Mock Up](#design-mock-up)
-+ ### [Features](#features)
++ [Features](#features)
   + [Current Features](#current-features)
   + [Possible Future Features](#possible-future-features)
-+ ### [Technologies Used](#technologies-used)
++ [Technologies Used](#technologies-used)
   + [Languages Used](#languages-used)
   + [Frameworks Libraries & Programmes Used](#frameworks-libraries-and-programmes-used)
-+ ### [Testing](#testing)
++ [Testing](#testing)
   + [Validator Testing](#validator-testing) 
   + [Lighthouse Testing](#lighthouse-testing)
   + [PowerMapper Compatibility](#powerMapper-compatibility)
   + [Other Testing](#other-testing)
-+ ### [Deployment](#deployment)
++ [Deployment](#deployment)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
   + [Cloning Project](#cloning-project)
-+ ### [Credits](#credits)
++ [Credits](#credits)
   + [Content](#content)
   + [Media](#media)
   + [Acknowledgements](#acknowledgements)
@@ -41,16 +41,14 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 ## User Stories
 #### As a child user: 
 + I want to be able to easily navigate through the site.
-+ I want to be able to play a fully functioning game.
++ I want to choose if I want sound to play. 
 + I want to be able to see my score as the game progresses.
 + I want to know how many questions I have already answered during the game. 
 + I want to compare my scores to other users. 
-+ I want to easily replay the game once I have completed a round. 
-+ I want to know if I have answered a question correctly straight away. 
-+ I want to know the right answer if I get a question wrong. 
++ I want to easily replay the game once I have completed a game. 
++ I want to be able to come back to the game after a period of time and still access my old scores. 
 #### As a parent: 
 + I want my child to be able to test their knowledge.
-+ I want my child to learn some new information. 
 + I want the site to be easy to navigate through so that my child does not require assistance with the UI. 
 + I want a variety of subjects covered so that I can identify any gaps in my child's knowledge. 
 ## Design
@@ -119,19 +117,19 @@ At the completion or heavy editing of sections, I used the following to check my
 + [JavaScript](https://jshint.com/)
 ## Lighthouse Testing
 I used Chromes Lighthouse tools to test site performance. I made sure to check both desktop and mobile performances. Below are the screenshots from both tests:
-### Lighouse Desktop
-![Lighouse Desktop Results](assets/images/README/testing/lighthouse-desktop.PNG)
+### Lighthouse Desktop
+![Lighthouse Desktop Results](assets/images/README/testing/lighthouse-desktop.PNG)
 ### Lighthouse Mobile
 ![Lighthouse Mobile](assets/images/README/testing/lighthouse-mobile.PNG)
 
-Even though it's not a perfect score on mobile, I'm very happy with the outcome. There's a slight reduciton in the 'Performance' score but this seems fractional in the grand scheme of the project. 
+Even though it's not a perfect score on mobile, I'm very happy with the outcome. There's a slight reduction in the 'Performance' score but this seems fractional in the grand scheme of the project. 
 ## PowerMapper Compatibility
 I used the PowerMapper Compatibility feature to test the site on browsers that I don't have access to. 
 
 ![Lighthouse Mobile](assets/images/README/testing/powermapper-test.PNG)
 
 Internet Explorer was the big fail on this test. 
-The issue comes from using a WebP images as the background and this file type is not supported on IE. However, this is the optimal file type for all other browsers. And as IE has basically been deemed obsolete, I'm going to continue using the WebP image. As a concession, I have added a background colour to the page to emulate the look of the site (it's proably best practive to have a backup colour in place just in case the image doesn't load).
+The issue comes from using a WebP images as the background and this file type is not supported on IE. However, this is the optimal file type for all other browsers. And as IE has basically been deemed obsolete, I'm going to continue using the WebP image. As a concession, I have added a background colour to the page to emulate the look of the site (it's probably best practice to have a backup colour in place just in case the image doesn't load).
 ## Other Testing
 Due to the size of the testing section, I have created a separate document for it. You can find  it [here](https://github.com/AmyOShea/MS2-KidzQuiz/blob/master/testing.md). 
 
@@ -175,5 +173,5 @@ All other questions and content were written by Amy O'Shea (website creator).
 ## Acknowledgements
 + A massive shoutout to my cousins and their children for being testers that hit the target audience age. 
 + To all of my friends who tested the game in it's earliest stages and sent me all issues that they came across, that help was invaluable. 
-+ A big thank you to the Slack Community for their endless support and having most of my questrions answered before I even knew I had them! And a special mention to [Simen Daehlin](https://app.slack.com/client/T0L30B202/CGWQJQKC5/user_profile/U4MVA9YQP) who I think has answered just about every question that has come up on there!
++ A big thank you to the Slack Community for their endless support and having most of my questions answered before I even knew I had them! And a special mention to [Simen Daehlin](https://app.slack.com/client/T0L30B202/CGWQJQKC5/user_profile/U4MVA9YQP) who I think has answered just about every question that has come up on there!
 + And my mentor Antonio Rodriguez for going through the project step by step and teaching me how to approach what seemed like a behemoth task. 

@@ -5,6 +5,61 @@
 + [Bugs and Fixes](#bugs-and-fixes)
 + [Known Bugs](#known-bugs)
 ## Testing From User Stories
+I tested the user stories on all devices.
+### As a child user: 
+#### I want to be able to easily navigate through the site.
++ All pages (including 404 error page) have navigation links that can redirect to home.
++ All pages (including 404 error page) have navigation links that can redirect to game play.
++ All pages except the game page can access the rules page(theoretically the user has already read the rules BEFORE playing). 
++ All pages except the game page and error page can access the high scores page. 
+
+![ease of navigation](assets/images/README/testing/user-story-testing/01-nav.png)  
+#### I want to choose if I want sound to play. 
++ Audio only applies to game play so a button has been added to turn audio on/off.
++ Audio is pre-set to off unless user chooses otherwise. 
+
+![audio toggle](assets/images/README/testing/user-story-testing/03-audio.png)  
+#### I want to be able to see my score as the game progresses.
++ Every time the user chooses a correct answer, the score counter in the heads up display will update to show this.
++ If the user chooses an incorrect answer, the score counter won't update but the previous score will remain. 
+
+![Update score](assets/images/README/testing/user-story-testing/05-score-update.png) 
+#### I want to know how many questions I have already answered during the game. 
++ The question number will continue to update after a question is answered, regardless of the user getting the answer right or wrong.
+
+![Update question number](assets/images/README/testing/user-story-testing/04-question-update.png)  
+#### I want to compare my scores to other users. 
++ All scores that are high enough to make the top 5 are added to the scores table.
++ Scores are all displayed from highest to lowest, regardless of when they are added.
++ At the moment, the scores are held in local storage so as long as the user is playing on the same device as another user, they can see each others saved scores (this has been noted in possible future features). 
+
+![Comparing scores](assets/images/README/testing/user-story-testing/06-high-scores.png)
+#### I want to easily replay the game once I have completed a game. 
++ From both the end game page and high scores page there is a button with the option to replay the game.
++ Because the game html will reload when the replay button is hit, the game will pull another 10 random questions. 
+
+![Replay option](assets/images/README/testing/user-story-testing/07-replay.png)  
+#### I want to be able to come back to the game after a period of time and still access my old scores. 
++ Because the scores are saved in the local storage, the user will be able to shut down the page or turn off the device and still be able to go back and view the scores. 
++ The previously saved scores are accessible from the home page. 
++ If the user plays the game again, the previous scores will be shown when they submit their name/new score.
+
+![Saved scores](assets/images/README/testing/user-story-testing/08-saved-scores.png)  
+### As a parent: 
+#### I want my child to be able to test their knowledge.
++ All of the questions are displayed and the answers are multiple choice, giving the user a 1/3 chance to get the answer correct. This should allow the user (presumably a child) to use deductive reasoning if they're not 100% sure what the answer is. 
+
+![Testing knowledge](assets/images/README/testing/user-story-testing/10-knowledge-test.png)  
+#### I want the site to be easy to navigate through so that my child does not require assistance with the UI.
++ All of the buttons are large enough to be easily accessed. 
++ There's a clean layout with little distraction to avoid any confusion on the users side. 
+
+![ease of navigation](assets/images/README/testing/user-story-testing/01-nav.png)  
+#### I want a variety of subjects covered so that I can identify any gaps in my child's knowledge.
++ At the moment there are 6 categories of questions - Science, General Knowledge, English, Animals, Geography and Maths. 
++ The game is set up to shuffle through the available questions so that there will be a variety available.  
+
+![Question pool](assets/images/README/testing/user-story-testing/09-question-pool.png) 
 ---
 ## Manually Testing Functionality
 ### Navigation Buttons
@@ -42,8 +97,11 @@
 ## Bugs and Fixes
 ### 1. ES6 Issue
 After the first run through the JS Validator, I received the following error: 
-![autofill bug](assets/images/README/testing/es6-bug.PNG)  
-After a bit of research I learned that if you declare that you're using ES6 at the top of your JavaScript file, this error will be removed. I added the following line at the top of my JavaScript file:  
+
+![autofill bug](assets/images/README/testing/es6-bug.PNG)
+
+After a bit of research I learned that if you declare that you're using ES6 at the top of your JavaScript file, this error will be removed. I added the following line at the top of my JavaScript file: 
+
 ![autofill bug](assets/images/README/testing/es6-bug-fix.PNG)
 
 ---
