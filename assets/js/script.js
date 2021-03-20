@@ -1,7 +1,8 @@
 /*jshint esversion: 6 */
 
-//-------------------------------------------------------------------------------- General Variables
-
+/**
+ * GENERAL VARIABLES
+ */
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("ans-choice"));
 const correctAnsBonus = 1;
@@ -28,7 +29,9 @@ let questionCounter = [];
     //**ERROR FIX**
 let saveHighScore;
 
-//-------------------------------------------------------------------------------- Questions
+/**
+ * QUESTIONS
+ */
 
 let questions = [];
 
@@ -51,10 +54,14 @@ fetch("db.json")
     startGame();
 });
 
-//--------------------------------------------------------------------------------  GAME PLAY
+/**
+ * GAME PLAY
+ */
 
+ // Sets audio to be 'off' at begining of game play
 let music = "off";
 
+//Sets on/off function for audio button
 function toggleAudio() {
     if(music === "off") {
         music = "on";
@@ -85,7 +92,6 @@ function getNewQuestion() {
     if (questionCounterDisplay !== null) {
         questionCounterDisplay.innerText = `Question ${questionCounter}`;
     }
-
 
         //Randomizes order of questions and display them in game
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -131,7 +137,6 @@ choices.forEach(choice => {
         //Add correct/incorrect class to user choice
         selectedChoice.classList.add(selectedChoiceClass);
 
-
         //Remove correct/incorrect class to user choice before new question diplayed
         setTimeout(() => {
             selectedChoice.classList.remove(selectedChoiceClass);
@@ -145,23 +150,25 @@ function updateCurrentScore(num) {
     currentScoreDisplay.innerText = `Score: ${score}`;
 }
 
-//-------------------------------------------------------------------------------- END GAME
+/**
+ * END GAME
+ */
 
     //Display final score to user
-
 if (endScore !== null) {
     endScore.innerText = `Final Score: ${recentScore}`;
 }
 
     //Submit button disabled until name is entered
-
     if (username !== null) {
     username.addEventListener('keyup', () => {
         saveBtn.disabled = !username.value;
     });
 }
 
-//----------------------------------------------------------------- Save High Score
+/**
+ * SAVE HIGH SCORES
+ */
 
 saveHighScore = (event) => {
 
@@ -190,7 +197,9 @@ saveHighScore = (event) => {
     return window.location.assign("high-scores.html");
     };
 
-//-------------------------------------------------------------------------------- HIGH SCORES
+/**
+ * HIGHSCORES
+ */
 
 if (tableBody !== null) {
     tableBody.innerHTML = highScores.map(score =>

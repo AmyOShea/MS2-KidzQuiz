@@ -119,11 +119,11 @@ However, after a bit of research, I learned that I could use an 'if statement' t
 
 ### 3. After another run through the JS validator, I received the following error: 
 
-![autofill bug](assets/images/README/testing/var-not-declared-01.PNG)
+![autofill bug](assets/images/README/testing/var-not-defined-01.PNG)
 
 I tried a few fixes (including declaring it as a variable on that line) but each fix seemed to cause more problems. As a solution, I added ```saveHighScores``` to my variables section but didn't give it any value: 
 
-![autofill bug](assets/images/README/testing/var-not-declared-02.PNG)  
+![autofill bug](assets/images/README/testing/var-not-defined-02.PNG)  
 
 ---
 ### 4. Hover Button Sticking on Mobile

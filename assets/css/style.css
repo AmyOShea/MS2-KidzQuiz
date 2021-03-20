@@ -27,8 +27,7 @@ body {
     display: none;
 }
 
-/*------------------------------------------------ General Buttons*/
-
+/*GENERAL BUTTONS*/
 
 a.navigation-btn, .ans-choice, .submit-btn {
     text-align: center;
@@ -52,7 +51,6 @@ a.navigation-btn, .ans-choice {
     color: rgb(98, 235, 98);
 }
 
-
 /*Hover effect only present on desktop, not mobile*/
 @media (pointer: fine) {
     a.navigation-btn:hover, .ans-choice:hover,  .submit-btn:hover, #game-to-home:hover {
@@ -62,8 +60,7 @@ a.navigation-btn, .ans-choice {
     }
 }
 
-
-/*------------------------------------------------ Home Page*/
+/*HOME PAGE*/
 
 .green-board {
     background-image: -o-linear-gradient(300deg, rgb(116, 165, 44), rgb(64, 100, 43));
@@ -97,7 +94,7 @@ h2#tag-line {
     padding-bottom: 4rem;
 }
 
-/*------------------------------------------------ Rules*/
+/*RULES*/
 
 #rules-heading {
     padding-bottom: 1.5rem;
@@ -124,7 +121,7 @@ li {
 
 
 
-/*------------------------------------------------ Game Play*/
+/*GAME PAGE*/
 
 .hud {
     margin-top: 2.5vh;
@@ -160,7 +157,6 @@ li {
     border: 3px solid rgb(77, 187, 77);
 }
 
-
 #audio-btn {
     background-color: rgb(98, 235, 98);
     color: #fff;
@@ -180,8 +176,7 @@ li {
     outline: none;
 }
   
-
-/*------------------------------------------------ Loader*/
+/*LOADER*/
 
 #loader, #error {
     width: 250px;
@@ -232,8 +227,7 @@ img.apple {
     padding-top: 30px;
 }
 
-
-/*------------------------------------------------ End Game*/
+/*END GAME*/
 
 #end-heading {
     padding-bottom: 1.5rem;
@@ -262,7 +256,6 @@ input {
     color: #fff;
 }
 
-
 input, .submit-btn {
   padding: 0;
   margin: 0 .3rem 0 .3rem;
@@ -270,26 +263,21 @@ input, .submit-btn {
           box-sizing: border-box;
 }
 
-
 ::-webkit-input-placeholder {
     color: #fff;
 }
-
 
 ::-moz-placeholder {
     color: #fff;
 }
 
-
 :-ms-input-placeholder {
     color: #fff;
 }
 
-
 ::-ms-input-placeholder {
     color: #fff;
 }
-
 
 ::placeholder {
     color: #fff;
@@ -299,7 +287,7 @@ input, .submit-btn {
     font-size: 1.2rem;
 }
 
-/*------------------------------------------------ High Scores*/
+/*HIGH SCORES*/
 
 #scores-header {
     font-size: 4.5rem;
@@ -314,7 +302,7 @@ input, .submit-btn {
     margin-bottom: 3rem;
 }
 
-/*------------------------------------------------ Error Page*/
+/*404 ERROR PAGE*/
 
 #error-text {
     padding-top: 50px;
