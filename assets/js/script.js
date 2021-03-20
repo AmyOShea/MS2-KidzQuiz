@@ -126,7 +126,7 @@ choices.forEach(choice => {
             updateCurrentScore(correctAnsBonus);
         } else if (selectedChoiceClass === "incorrect" && music === "on") {
             incorrectAudio.play();
-        };
+        }
 
         //Add correct/incorrect class to user choice
         selectedChoice.classList.add(selectedChoiceClass);
