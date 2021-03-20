@@ -30,6 +30,7 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
   + [Other Testing](#other-testing)
 + [Deployment](#deployment)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
+  + [Forking the Repository](#forking-the-repository)
   + [Cloning Project](#cloning-project)
 + [Credits](#credits)
   + [Content](#content)
@@ -55,12 +56,13 @@ You can find the live site [here](https://amyoshea.github.io/MS2-KidzQuiz/).
 ### Overall Feel
 The overall feel of this website is to emulate and old school classroom setting. While this setting could be seen as outdated due to the fact that classrooms don't use greenboards or chalk any more, I believe that the imagery is instantly recognisable. 
 ### Colour Scheme
-I'm sticking to a simple colour pallette to cause little to no distraction for a child to be able to focus. 
+I'm sticking to a simple colour pallette to cause little to no distraction for a child to be able to focus. I started with the greenboard idea and worked the colour scheme around it. 
+![Colour scheme](assets/images/README/colour-scheme.png)
 ### Typography
 To go with the school theme, I wanted a typeface that would emulate the look of chalk on a board.
 I chose the [Chawp](https://www.1001fonts.com/chawp-font.html) font created by [Tyler Finck](https://www.1001fonts.com/users/tylerfinck/) because it was open source and it fit the school theme. I was then able to convert the .tff file to both .woff and .woff2 files for cross browser compatibility.
 ### Sound
-The plan for sound was to keep it as simple as possible - as with the colour scheme, I want to keep the possible distractions to a minimum doe to the young age of the target audience. The only sound is based on the user getting an answer right or wrong. 
+The plan for sound was to keep it as simple as possible - as with the colour scheme, I want to keep the possible distractions to a minimum due to the young age of the target audience. The only sound is based on the user getting an answer right or wrong. 
 ## Wireframes and Initial Design
 ### Wireframes
 All Wireframes were designed for laptop/computer, iPad/tablet and phone display.
